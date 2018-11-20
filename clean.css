@@ -1,0 +1,8 @@
+/* Course Dashboard tab, which I have never had a genuine reason to click on */
+.sgy-tabbed-navigation {
+    display: none !important;
+}
+/* Matching margin on right column */
+#right-column {
+    margin: 0 !important;
+}
