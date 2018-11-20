@@ -18,7 +18,6 @@ nav[role="navigation"] button {
     background: none !important;
 }
 nav[role="navigation"] ul:first-of-type li:first-of-type a:after {
-    content: 'HOME';
 }
 
 /* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
