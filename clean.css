@@ -22,3 +22,15 @@
 .upcoming-events h3 {
     display: none !important;
 }
+.upcoming-events .date-header.first h4 {
+    margin-top: 10px !important;
+}
+
+/* Compact feed */
+/* Hide user pictures, in theory this should be configurable */
+.edge-left {
+    display: none !important;
+}
+.edge-main-wrapper {
+    padding-left: 0 !important;
+}
