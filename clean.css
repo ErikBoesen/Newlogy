@@ -1,6 +1,8 @@
 /* Background color and shadows */
 body, #main, #main-inner {
-    background: none !important;
+    background: white !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
 }
 #home-feed-container, .upcoming-events {
     box-shadow: none !important;
@@ -36,7 +38,13 @@ nav[role="navigation"] input {
 /* School colored links */
 #wrapper a {
     color: #cc3344 !important;
+}
 
+
+#wrapper,
+.update-body {
+    /* TODO: use a simpler color everywhere */
+    color: #677583 !important;
 }
 
 /* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
@@ -75,6 +83,12 @@ nav[role="navigation"] input {
 .edge-main-wrapper {
     padding-left: 0 !important;
 }*/
+/* Round user pictures */
+.profile-picture img {
+    height: 100% !important;
+    border-radius: 100% !important;
+    overflow: hidden !important;
+}
 /* Scale down link icons */
 .attachments-link.clearfix {
     padding: 0 !important;
@@ -84,4 +98,8 @@ nav[role="navigation"] input {
 }
 .attachments-link-left .inline-icon {
     padding-right: 5px !important;
+}
+
+.feed-comments {
+    background: none !important;
 }
