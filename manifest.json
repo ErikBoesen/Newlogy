@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Noology",
+	"description": "Remove unnecessary components from the Schoology interface",
+	"version": "1.0",
+	"content_scripts": [{
+		"matches": ["https://docs.google.com/forms/d/e/*/formrestricted"],
+        "all_frames": true,
+		"js": ["unlock_redirect.js"]
+	}],
+	"permissions": [
+		"activeTab"
+	]
+}
