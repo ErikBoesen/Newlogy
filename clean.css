@@ -6,6 +6,18 @@ body, #main-inner {
     box-shadow: none !important;
 }
 
+/* Navigation header */
+#header {
+    background-color: #cc3344 !important;
+    border: none !important;
+}
+#header header,
+nav[role="navigation"] li,
+nav[role="navigation"] a,
+nav[role="navigation"] button {
+    background: none !important;
+}
+
 /* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
 .sgy-tabbed-navigation {
     display: none !important;
