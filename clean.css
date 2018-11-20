@@ -12,3 +12,13 @@
 #smart-box {
     display: none !important;
 }
+
+/* Upcoming items header */
+#right-column {}
+.upcoming-events {
+    padding-top: 1px !important;
+    margin-top: -5px !important;
+}
+.upcoming-events h3 {
+    display: none !important;
+}
