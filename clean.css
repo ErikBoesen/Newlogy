@@ -1,6 +1,6 @@
 /* Background color and shadows */
-body, #main-inner {
-    background: white !important;
+body, #main, #main-inner {
+    background: none !important;
 }
 #home-feed-container, .upcoming-events {
     box-shadow: none !important;
@@ -25,10 +25,18 @@ nav[role="navigation"] button svg ~ span {
     color: #cc3344 !important;
 }
 
+nav[role="navigation"] div[role="menu"],
+/* search bar */
+nav[role="navigation"] ul ul,
+nav[role="navigation"] input {
+    border: none !important;
+    margin-top: 0 !important;
+}
+
 /* School colored links */
 #wrapper a {
     color: #cc3344 !important;
-    font-weight: normal !important;
+
 }
 
 /* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
