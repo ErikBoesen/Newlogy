@@ -8,6 +8,10 @@ Please note that Noology was initially designed with the FCCPS version of School
 
 Additionally note that the users of this extension are assumed to be students. Some elements useful only to teachers might be inhibited. This is not intentional, but as students we have no way to test this extension on the teacher interface.
 
+## Goals
+* Evenly enforce style standards. For example, use school-colored links everywhere, not just in updates.
+* Unify design. Some parts of the Schoology interface (like header components) use very modern design elements while other parts of the interface have not been updated for years.
+
 ## License
 [MIT](LICENSE)
 ## Author
