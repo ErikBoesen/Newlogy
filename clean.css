@@ -25,6 +25,12 @@ nav[role="navigation"] button svg ~ span {
     color: #cc3344 !important;
 }
 
+/* School colored links */
+#wrapper a {
+    color: #cc3344 !important;
+    font-weight: normal !important;
+}
+
 /* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
 .sgy-tabbed-navigation {
     display: none !important;
