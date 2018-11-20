@@ -5,7 +5,7 @@
     "version": "1.0",
     "content_scripts": [{
         "matches": ["https://*.schoology.com/*", "https://schoology.com/*"],
-        "js": [],
+        "js": ["clean.js"],
         "css": ["clean.css"]
     }],
     "permissions": [
