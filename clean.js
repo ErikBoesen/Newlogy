@@ -1,3 +1,4 @@
+// Replace header logo with a plain Home button
 var nav = document.querySelector('nav[role="navigation"] ul');
 nav.removeChild(nav.childNodes[0]);
 var item = document.querySelector('nav[role="navigation"] ul li:nth-of-type(3)');
