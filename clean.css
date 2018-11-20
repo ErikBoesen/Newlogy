@@ -34,3 +34,13 @@
 .edge-main-wrapper {
     padding-left: 0 !important;
 }
+/* Scale down link icons */
+.attachments-link.clearfix {
+    padding: 0 !important;
+}
+.inline-icon {
+    margin: 0 !important;
+}
+.attachments-link-left .inline-icon {
+    padding-right: 5px !important;
+}
