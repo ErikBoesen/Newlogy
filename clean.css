@@ -1,8 +1,14 @@
-/* Course Dashboard tab, which I have never had a genuine reason to click on */
+/* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
 .sgy-tabbed-navigation {
     display: none !important;
 }
-/* Matching margin on right column */
 #right-column {
     margin: 0 !important;
+}
+
+/* Junk at top of update stream */
+#home-feed-container #edge-filters,
+/* SMART BOX NOT SO SMART ANYMORE? */
+#smart-box {
+    display: none !important;
 }
