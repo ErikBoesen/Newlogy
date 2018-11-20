@@ -17,7 +17,12 @@ nav[role="navigation"] a,
 nav[role="navigation"] button {
     background: none !important;
 }
-nav[role="navigation"] ul:first-of-type li:first-of-type a:after {
+nav[role="navigation"] ul:first-of-type li:first-of-type a {}
+/* colorful notification number bubble */
+nav[role="navigation"] button svg ~ span {
+    border: none !important;
+    background: white !important;
+    color: #cc3344 !important;
 }
 
 /* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
@@ -50,12 +55,12 @@ nav[role="navigation"] ul:first-of-type li:first-of-type a:after {
 
 /* Compact feed */
 /* Hide user pictures, in theory this should be configurable */
-.edge-left {
+/*.edge-left {
     display: none !important;
 }
 .edge-main-wrapper {
     padding-left: 0 !important;
-}
+}*/
 /* Scale down link icons */
 .attachments-link.clearfix {
     padding: 0 !important;
