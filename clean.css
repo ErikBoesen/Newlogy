@@ -259,7 +259,7 @@ div[role="menu"] button {
 .attachments-link-left .inline-icon {
     padding-right: 5px !important;
 }
-/* Hide displayed URL. Looks nice, maybe insecure. */
+/* Hide displayed URL. Looks nicer, though perhaps less safe. */
 .attachments-link-summary {
     display: none !important;
 }
