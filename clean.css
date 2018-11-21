@@ -149,7 +149,8 @@ nav[role="navigation"] div[role="menu"] article a > div:first-of-type {
     padding-left: 0 !important;
 }*/
 /* Round user pictures */
-.profile-picture img {
+/* Needs qualifier or else course photos will also count */
+.item-list .profile-picture img {
     height: 100% !important;
     border-radius: 100% !important;
     overflow: hidden !important;
