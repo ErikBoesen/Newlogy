@@ -194,7 +194,7 @@ div[role="menu"] button {
 .item-list .profile-picture img,
 .message-view-row .picture img {
     height: 100% !important;
-    border-radius: 100% !important;
+    margin-top: 4px;
 }
 .update-body {
     margin-top: 3px !important;
