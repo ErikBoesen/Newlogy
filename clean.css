@@ -44,9 +44,14 @@ nav[role="navigation"] input {
     margin-top: 0 !important;
 }
 
-/* Reset popup group/course menus to close to old format */
+/* Reset popup group/course menus to close to oldish format */
 nav[role="navigation"] ul:first-child div[role="menu"] {
-    position: relative !important;
+    /* Stop menus from taking up full page */
+    top: auto !important;
+    left: auto !important;
+    width: auto !important;
+
+    padding: 20px 0;
 }
 /* header of course/group menus */
 nav[role="navigation"] ul:first-child div[role="menu"] .CjR09._8a6xl._1tpub h2 {
