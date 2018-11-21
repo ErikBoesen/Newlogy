@@ -281,3 +281,10 @@ form#privatemsg-new .cancel-btn {
 .folder-contents-cell span[role="button"] {
     outline: none !important;
 }
+/* Upcoming header with calendar button */
+h3#event-selector {
+    border: none !important;
+}
+.left-block-wrapper {
+    display: none !important;
+}
