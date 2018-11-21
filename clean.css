@@ -87,11 +87,16 @@ nav[role="navigation"] ul:first-child div[role="menu"] article {
     border: none !important;
 }
 nav[role="navigation"] ul:first-child div[role="menu"] article a {
+    /* Remove border around course */
     outline: none !important;
+}
+nav[role="navigation"] ul:first-child div[role="menu"] article a:hover > div:first-of-type {
+    text-decoration: underline !important;
 }
 /* course image in list */
 nav[role="navigation"] ul:first-child div[role="menu"] article a > div:first-of-type {
     display: none !important;
+    color: #cc3344 !important;
 }
 
 /* School colored links */
