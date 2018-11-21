@@ -26,6 +26,11 @@ nav[role="navigation"] button svg ~ span {
     background: white !important;
     color: #cc3344 !important;
 }
+/* User profile picture in top right */
+/* TODO: find a better selector */
+.USYsM._5jizS.KWgmS._14XBn {
+    border: none !important;
+}
 
 nav[role="navigation"] div[role="menu"],
 /* search bar */
