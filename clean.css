@@ -47,6 +47,7 @@ nav[role="navigation"] input {
 
 
 #wrapper,
+.s-like-sentence,
 .update-body {
     /* TODO: use a simpler color everywhere */
     color: #677583 !important;
@@ -127,4 +128,28 @@ nav[role="navigation"] input {
 
 .feed-comments {
     background: none !important;
+    padding: 0 !important;
+}
+.s-like-sentence,
+.comment {
+    border: none !important;
+}
+.feed-comments textarea {
+    padding: 5px 10px 10px !important;
+    border-radius: 5px !important;
+}
+.feed-comments .submit-span-wrapper {
+    background: none !important;
+    border: none !important;
+    height: 35px !important;
+}
+.feed-comments input[type="submit"] {
+    padding: 10px 12px !important;
+    background: #cc3344 !important;
+    border: none !important;
+    height: 100% !important;
+}
+.feed-comments textarea:focus,
+.feed-comments input:focus {
+    outline: none !important;
 }
