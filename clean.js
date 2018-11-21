@@ -7,7 +7,7 @@ new_item.childNodes[0].href = '/';
 new_item.childNodes[0].textContent = 'Home';
 nav.prepend(new_item);
 
-document.querySelector('footer nav').textContent = '// Using Betterlogy by Erik Boesen';
+document.querySelector('footer nav').textContent = '// Using Betterlogy by Erik Boesen 🖖👨🏻‍💻';
 
 // Add flag to language selector
 var flags = {
