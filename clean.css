@@ -103,6 +103,13 @@ div[role="menu"] a._1SIMq._2kpZl._3OAXJ,
 div[role="menu"] button {
     color: #cc3344 !important;
 }
+/* X button on some popup windows */
+._3uqhr._9e7c_._13ccs {
+    background: none !important;
+}
+._3uqhr._9e7c_._13ccs svg {
+    fill: #cc3344;
+}
 
 
 #wrapper,
