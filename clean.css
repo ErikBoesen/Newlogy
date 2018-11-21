@@ -201,7 +201,8 @@ div[role="menu"] button {
 .attachments-link.clearfix {
     padding: 0 !important;
 }
-.inline-icon {
+/* needs .edge-main qualifier to not interfere with file lists in course pages */
+.edge-main .inline-icon {
     margin: 0 !important;
 }
 .attachments-link-left .inline-icon {
@@ -239,9 +240,7 @@ input:focus {
     border: none !important;
 }
 /* TODO: this same styling could apply to many more elements, not just message box. Find more generic selector */
-form#privatemsg-new {
-
-}
+form#privatemsg-new {}
 form#privatemsg-new {
     border-radius: 5px !important;
 }
@@ -259,10 +258,4 @@ form#privatemsg-new #attachments #attachment-selector li {
 /* as far as I can see, the Cancel button doesn't actually do anything, so just hide it */
 form#privatemsg-new .cancel-btn {
     display: none !important;
-}
-
-/* Course pages */
-/* TODO: this is overriding something else we're doing... gotta figure out how to not need this */
-.material-row-folder .folder-contents-cell {
-    padding-left: inherit !important;
 }
