@@ -79,6 +79,19 @@ nav[role="navigation"] input {
 }
 
 /* Compact feed */
+/* multicolored arrows connecting poster with group/course */
+.arrow-right,
+.purple-arrow-right,
+.green-arrow-right {
+    background: none !important;
+    width: auto !important;
+    margin: 0 !important;
+}
+.arrow-right::after,
+.purple-arrow-right::after,
+.green-arrow-right::after {
+    content: '-';
+}
 /* Hide user pictures, in theory this should be configurable */
 /*.edge-left {
     display: none !important;
