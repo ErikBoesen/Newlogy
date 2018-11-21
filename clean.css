@@ -239,6 +239,12 @@ div[role="menu"] button {
 .attachments-link.clearfix {
     padding: 0 !important;
 }
+.s-polls-poll-option {
+    border-color: #eee !important;
+}
+.s-poll-option-title {
+    color: inherit !important;
+}
 /* needs .edge-main qualifier to not interfere with file lists in course pages */
 .edge-main .inline-icon {
     margin: 0 !important;
