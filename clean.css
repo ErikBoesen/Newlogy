@@ -1,3 +1,9 @@
+/* General */
+body {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important !important;
+}
+
 /* Background color and shadows */
 body, #main, #main-inner {
     background: white !important;
@@ -243,7 +249,7 @@ div[role="menu"] button {
     border-color: #eee !important;
 }
 .s-poll-option-title {
-    color: inherit !important;
+    color: #677583 !important;
 }
 /* needs .edge-main qualifier to not interfere with file lists in course pages */
 .edge-main .inline-icon {
