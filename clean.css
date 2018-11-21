@@ -40,6 +40,20 @@ nav[role="navigation"] input {
     margin-top: 0 !important;
 }
 
+/* Reset popup group/course menus to close to old format */
+nav[role="navigation"] div[role="menu"] {
+    position: relative !important;
+}
+/* header of course/group menus */
+nav[role="navigation"] div[role="menu"] .CjR09._8a6xl._1tpub h2 {
+    display: none !important;
+}
+/* individual course items, need to be stretched to not go in a row */
+nav[role="navigation"] div[role="menu"] ._3hM4e._3_a9F.zJU7e {
+    width: 100% !important;
+    display: block !important;
+}
+
 /* School colored links */
 #wrapper a {
     color: #cc3344 !important;
