@@ -129,6 +129,17 @@ div[role="menu"] button {
     fill: #0C88C2;
 }
 
+/* Used for "who liked this" popups, among others */
+.popups-box {
+   padding: 0 !important;
+   border-radius: 0 !important;
+}
+.popups-box .popups-body {
+    padding: 0 !important;
+}
+.popups-box .submit-buttons {
+    display: none !important;
+}
 
 #wrapper,
 .s-like-sentence,
