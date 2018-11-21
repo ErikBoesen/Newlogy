@@ -48,10 +48,17 @@ nav[role="navigation"] div[role="menu"] {
 nav[role="navigation"] div[role="menu"] .CjR09._8a6xl._1tpub h2 {
     display: none !important;
 }
+/* rows of courses or groups */
+nav[role="navigation"] div[role="menu"] ._1tpub {
+    flex-direction: column;
+}
 /* individual course items, need to be stretched to not go in a row */
 nav[role="navigation"] div[role="menu"] ._3hM4e._3_a9F.zJU7e {
     width: 100% !important;
     display: block !important;
+}
+nav[role="navigation"] div[role="menu"] article a > div:first-of-type {
+    display: none !important;
 }
 
 /* School colored links */
