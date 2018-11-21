@@ -196,7 +196,35 @@ nav[role="navigation"] div[role="menu"] article a > div:first-of-type {
     border: none !important;
     height: 100% !important;
 }
-.feed-comments textarea:focus,
-.feed-comments input:focus {
+textarea:focus,
+input:focus {
     outline: none !important;
+}
+
+/* Message threads */
+#main-content-wrapper,
+.message-view-row {
+    border: none !important;
+}
+/* TODO: this same styling could apply to many more elements, not just message box. Find more generic selector */
+form#privatemsg-new {
+
+}
+form#privatemsg-new {
+    border-radius: 5px !important;
+}
+form#privatemsg-new label {
+    display: none !important;
+}
+form#privatemsg-new #attachments #attachment-selector {
+    margin-top: 2px;
+    border: none !important;
+    background: none !important;
+}
+form#privatemsg-new #attachments #attachment-selector li {
+    border: none !important;
+}
+/* as far as I can see, the Cancel button doesn't actually do anything, so just hide it */
+form#privatemsg-new .cancel-btn {
+    display: none !important;
 }
