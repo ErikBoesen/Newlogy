@@ -150,10 +150,10 @@ nav[role="navigation"] div[role="menu"] article a > div:first-of-type {
 }*/
 /* Round user pictures */
 /* Needs qualifier or else course photos will also count */
-.item-list .profile-picture img {
+.item-list .profile-picture img,
+.message-view-row .picture img {
     height: 100% !important;
     border-radius: 100% !important;
-    overflow: hidden !important;
 }
 .update-body {
     margin-top: 3px !important;
