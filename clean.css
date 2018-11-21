@@ -58,6 +58,7 @@ nav[role="navigation"] div[role="menu"] ._3hM4e._3_a9F.zJU7e {
     width: 100% !important;
     display: block !important;
     border: 0 !important;
+    outline: none !important;
 }
 /* container immediately inside course card */
 ._36sHx._3M0N7.fjQuT._1EyV_,
@@ -66,9 +67,18 @@ nav[role="navigation"] div[role="menu"] ._3hM4e._3_a9F.zJU7e {
     padding: 0 !important;
     height: auto !important;
 }
+._36sHx._3M0N7.fjQuT._1EyV_ :first-child {
+    padding: 0 !important;
+}
 ._36sHx._3M0N7.fjQuT._1EyV_ :nth-child(n+2) {
     display: none !important;
 }
+nav[role="navigation"] div[role="menu"] article {
+    padding: 0 !important;
+    border: none !important;
+    outline: none !important;
+}
+/* course image in list */
 nav[role="navigation"] div[role="menu"] article a > div:first-of-type {
     display: none !important;
 }
