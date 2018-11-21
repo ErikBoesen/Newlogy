@@ -10,7 +10,7 @@ body, #main, #main-inner {
 
 /* Navigation header */
 #header {
-    background-color: #cc3344 !important;
+    background-color: #0C88C2 !important;
     border: none !important;
 }
 #header header,
@@ -24,7 +24,7 @@ nav[role="navigation"] ul:first-of-type li:first-of-type a {}
 nav[role="navigation"] button svg ~ span {
     border: none !important;
     background: white !important;
-    color: #cc3344 !important;
+    color: #0C88C2 !important;
 }
 /* User profile picture in top right */
 /* TODO: find a better selector */
@@ -96,12 +96,12 @@ nav[role="navigation"] ul:first-child div[role="menu"] article a:hover > div:fir
 /* course image in list */
 nav[role="navigation"] ul:first-child div[role="menu"] article a > div:first-of-type {
     display: none !important;
-    color: #cc3344 !important;
+    color: #0C88C2 !important;
 }
 
 /* School colored links */
 #wrapper a {
-    color: #cc3344 !important;
+    color: #0C88C2 !important;
 }
 /* enforce consistent button styling */
 /* old-style components */
@@ -112,19 +112,19 @@ input[type="submit"],
 /* language popup and maybe other things */
 div[role="menu"] a._1SIMq._2kpZl._3OAXJ,
 ._1f1I3._35u4I.IaH_B button {
-    background: #cc3344 !important;
+    background: #0C88C2 !important;
     color: white !important;
     border: none !important;
 }
 div[role="menu"] button {
-    color: #cc3344 !important;
+    color: #0C88C2 !important;
 }
 /* X button on some popup windows */
 ._3uqhr._9e7c_._13ccs {
     background: none !important;
 }
 ._3uqhr._9e7c_._13ccs svg {
-    fill: #cc3344;
+    fill: #0C88C2;
 }
 
 
