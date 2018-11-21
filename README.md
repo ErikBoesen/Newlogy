@@ -1,8 +1,8 @@
-# Betterlogy
+# Newlogy
 
 TODO: Screenshot
 
-Betterlogy simplifies the [Schoology](https://schoology.com) Learning Management System interface, removing seldom-used components and streamlining styling.
+Newlogy simplifies the [Schoology](https://schoology.com) Learning Management System interface, removing seldom-used components and streamlining styling.
 
 Please note that Noology was initially designed with the FCCPS version of Schoology in mind. The platform does not vary much between schools, so in theory it should work for any school. If you notice an inconsistency, please open an issue and we'll look into it.
 

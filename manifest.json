@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Betterlogy",
+    "name": "Newlogy",
     "description": "Remove unnecessary components from the Schoology interface",
     "version": "1.0",
     "content_scripts": [{
