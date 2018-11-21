@@ -111,6 +111,9 @@ nav[role="navigation"] input {
     border-radius: 100% !important;
     overflow: hidden !important;
 }
+.update-body {
+    margin-top: 3px !important;
+}
 /* Scale down link icons */
 .attachments-link.clearfix {
     padding: 0 !important;
