@@ -115,6 +115,10 @@ nav[role="navigation"] input {
 .attachments-link-left .inline-icon {
     padding-right: 5px !important;
 }
+/* Hide displayed URL. Looks nice, maybe insecure. */
+.attachments-link-summary {
+    display: none !important;
+}
 
 .feed-comments {
     background: none !important;
