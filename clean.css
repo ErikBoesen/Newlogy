@@ -46,6 +46,9 @@ nav[role="navigation"] input {
     /* TODO: use a simpler color everywhere */
     color: #677583 !important;
 }
+#wrapper * {
+    font-size: 14px;
+}
 
 /* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
 .sgy-tabbed-navigation {
