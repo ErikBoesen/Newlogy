@@ -259,3 +259,25 @@ form#privatemsg-new #attachments #attachment-selector li {
 form#privatemsg-new .cancel-btn {
     display: none !important;
 }
+
+/* Course pages */
+/* Course title header; remove borders */
+#center-top {
+    border: none !important;
+}
+/* Unnecessray course switching dropdowns in top right */
+.realm-top-right {
+    display: none !important;
+}
+/* "All Materials" dropdown and unnecessary padding */
+.materials-top {
+    display: none !important;
+}
+/* Hide borders of resource items */
+.folder-contents-cell {
+    border: none !important;
+}
+/* Remove outline from folder expand button */
+.folder-contents-cell span[role="button"] {
+    outline: none !important;
+}
