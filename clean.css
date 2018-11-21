@@ -131,6 +131,7 @@ nav[role="navigation"] ul:first-child div[role="menu"] article a > div:nth-of-ty
 
 /* Eliminate inconsistent school colored links */
 #wrapper a,
+footer a,
 .like-btn span,
 .ajax-post-comment {
     color: #0C88C2 !important;
