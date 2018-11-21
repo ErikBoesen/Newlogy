@@ -99,8 +99,10 @@ nav[role="navigation"] ul:first-child div[role="menu"] article a > div:first-of-
     color: #0C88C2 !important;
 }
 
-/* School colored links */
-#wrapper a {
+/* Eliminate inconsistent school colored links */
+#wrapper a,
+.like-btn span,
+.ajax-post-comment {
     color: #0C88C2 !important;
 }
 /* enforce consistent button styling */
