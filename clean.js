@@ -8,3 +8,16 @@ new_item.childNodes[0].textContent = 'Home';
 nav.prepend(new_item);
 
 document.querySelector('footer nav').textContent = '// Using BetterSchoology by Erik Boesen';
+
+// Add flag to language selector
+var flags = {
+    'English': '🇺🇸',
+    'English (UK)': '🇬🇧',
+    'Français des Affaires': '🇫🇷',
+    '日本語': '🇯🇵',
+    'Bahasa Melayu': '🇲🇾',
+    'Português': '🇵🇹',
+    'Español': '🇪🇸',
+};
+var lang = document.querySelector('footer button');
+lang.textContent = flags[lang.textContent] + ' ' + lang.textContent;
