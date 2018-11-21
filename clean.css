@@ -28,8 +28,12 @@ nav[role="navigation"] button svg ~ span {
 }
 /* User profile picture in top right */
 /* TODO: find a better selector */
-.USYsM._5jizS.KWgmS._14XBn {
+._1tpub .USYsM._5jizS.KWgmS._14XBn {
     border: none !important;
+}
+/* hide text next to user picture */
+._1tpub .LGaPf {
+    display: none !important;
 }
 
 nav[role="navigation"] div[role="menu"],
