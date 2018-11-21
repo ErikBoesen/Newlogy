@@ -15,7 +15,7 @@ body, #main, #main-inner {
 }
 #header header,
 nav[role="navigation"] li,
-nav[role="navigation"] a,
+nav[role="navigation"] li > a,
 nav[role="navigation"] button {
     background: none !important;
 }
@@ -85,6 +85,22 @@ nav[role="navigation"] ul:first-child div[role="menu"] article a > div:first-of-
 
 /* School colored links */
 #wrapper a {
+    color: #cc3344 !important;
+}
+/* enforce consistent button styling */
+/* old-style components */
+.submit-span-wrapper,
+.delete2-btn,
+input[type="submit"],
+/* on modernly-designed components */
+/* language popup and maybe other things */
+div[role="menu"] a._1SIMq._2kpZl._3OAXJ,
+._1f1I3._35u4I.IaH_B button {
+    background: #cc3344 !important;
+    color: white !important;
+    border: none !important;
+}
+div[role="menu"] button {
     color: #cc3344 !important;
 }
 
