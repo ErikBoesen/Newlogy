@@ -193,7 +193,6 @@ div[role="menu"] button {
 /* Needs qualifier or else course photos will also count */
 .item-list .profile-picture img,
 .message-view-row .picture img {
-    height: 100% !important;
     margin-top: 4px;
 }
 .update-body {
