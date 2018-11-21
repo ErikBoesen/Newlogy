@@ -51,11 +51,23 @@ nav[role="navigation"] div[role="menu"] .CjR09._8a6xl._1tpub h2 {
 /* rows of courses or groups */
 nav[role="navigation"] div[role="menu"] ._1tpub {
     flex-direction: column;
+    margin: 0 !important;
 }
 /* individual course items, need to be stretched to not go in a row */
 nav[role="navigation"] div[role="menu"] ._3hM4e._3_a9F.zJU7e {
     width: 100% !important;
     display: block !important;
+    border: 0 !important;
+}
+/* container immediately inside course card */
+._36sHx._3M0N7.fjQuT._1EyV_,
+._1Z0RM._1tpub
+{
+    padding: 0 !important;
+    height: auto !important;
+}
+._36sHx._3M0N7.fjQuT._1EyV_ :nth-child(n+2) {
+    display: none !important;
 }
 nav[role="navigation"] div[role="menu"] article a > div:first-of-type {
     display: none !important;
