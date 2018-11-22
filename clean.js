@@ -7,6 +7,8 @@ new_item.childNodes[0].href = '/';
 new_item.childNodes[0].textContent = 'Home';
 nav.prepend(new_item);
 
+// Add watermark in footer
+// Use of innerHTML is safe here since no content is drawn from external/untrusted sources
 document.querySelector('footer nav').innerHTML = '// Using <a href="https://github.com/ErikBoesen/Newlogy#readme">Newlogy</a> by <a href="https://erikboesen.com">Erik Boesen</a> 🖖👨🏻‍💻';
 
 // Add flag to language selector
