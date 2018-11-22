@@ -161,7 +161,7 @@ div[role="menu"] button {
     fill: #0C88C2;
 }
 
-/* Used for "who liked this" popups, among others */
+/* Used for "who liked this" popups, initial message compositions, etc. */
 .popups-box {
    padding: 0 !important;
    border-radius: 0 !important;
@@ -268,6 +268,26 @@ div[role="menu"] button {
     display: none !important;
 }
 
+/* Force like info into line with date & buttons */
+.feed-comments,
+.s-like-sentence {
+    display: inline !important;
+}
+/* Hide smiley face icon; we'll use an emoji instead */
+.s-like-sentence span {
+    display: none !important;
+}
+.s-like-sentence,
+.comment .like-details-btn {
+    padding-left: 0 !important;
+}
+.comment .like-details-btn {
+    background: none !important;
+}
+.s-like-sentence::before,
+.comment .like-details-btn::before {
+    content: '👍 ';
+}
 .feed-comments {
     background: none !important;
     padding: 0 !important;
