@@ -287,6 +287,9 @@ div[role="menu"] button {
 .comment .like-details-btn {
     background: none !important;
 }
+.like-btn {
+    margin-right: -3px;
+}
 .like-btn::before {
     content: '👍 ';
 }
