@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Newlogy",
     "description": "Remove unnecessary components from the Schoology interface",
-    "version": "1.0",
+    "version": "1.1",
     "content_scripts": [{
         "matches": ["https://*.schoology.com/*", "https://schoology.com/*"],
         "js": ["clean.js"],
