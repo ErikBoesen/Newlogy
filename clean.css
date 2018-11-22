@@ -300,9 +300,7 @@ div[role="menu"] button {
     padding: 5px 5px 10px !important;
 }
 .feed-comments .submit-span-wrapper {
-    background: none !important;
     border: none !important;
-    height: 35px !important;
 }
 textarea:focus,
 input:focus {
