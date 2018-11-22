@@ -13,10 +13,9 @@ Please note that Newlogy was initially designed with the FCCPS version of School
 Additionally note that the users of this extension are assumed to be students. Some elements useful only to teachers might be inhibited. This is not intentional, but as students we have no way to test this extension on the teacher interface.
 
 ## Goals
-* Evenly enforce style standards. For example, use school-colored links everywhere, not just in updates.
-* Unify design. Some parts of the Schoology interface (like header components) use very modern design elements while other parts of the interface have not been updated for years.
-* Remove redundant UI elements and those which provide extraneous information
-* Simplify design language: remove useless borders, shadows, background shading, skeumorphism, etc.
+* Unify design
+* Remove extraneous and redundant UI elements
+* Simplify design language
 
 ## Changes
 * Replace school logo with a simple "Home" link because we haven't even used Access since fourth grade
