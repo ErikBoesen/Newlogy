@@ -139,7 +139,8 @@ footer a,
 /* enforce consistent button styling */
 /* old-style components */
 .submit-span-wrapper,
-.delete2-btn,
+/* TODO: ew */
+a.delete2-btn.link-btn, a.delete2-btn[href^=/messages/ajax/delete],
 input[type="submit"],
 /* on modernly-designed components */
 /* language popup and maybe other things */
