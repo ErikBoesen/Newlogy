@@ -8,7 +8,7 @@ Newlogy simplifies the [Schoology](https://schoology.com) Learning Management Sy
 ### After
 ![After screenshot](screenshots/new.png)
 
-Please note that Noology was initially designed with the FCCPS version of Schoology in mind. The platform does not vary much between schools, so in theory it should work for any school. If you notice an inconsistency, please open an issue and we'll look into it.
+Please note that Newlogy was initially designed with the FCCPS version of Schoology in mind. The platform does not vary much between schools, so in theory it should work for any school. If you notice an inconsistency, please open an issue and we'll look into it.
 
 Additionally note that the users of this extension are assumed to be students. Some elements useful only to teachers might be inhibited. This is not intentional, but as students we have no way to test this extension on the teacher interface.
 
@@ -17,6 +17,19 @@ Additionally note that the users of this extension are assumed to be students. S
 * Unify design. Some parts of the Schoology interface (like header components) use very modern design elements while other parts of the interface have not been updated for years.
 * Remove redundant UI elements and those which provide extraneous information
 * Simplify design language: remove useless borders, shadows, background shading, skeumorphism, etc.
+
+## Changes
+* Replace school logo with a simple "Home" link because we haven't even used Access since fourth grade
+* Remove useless homepage "RECENT ACTIVITY" and "COURSE DASHBOARD" tabs
+* Display course and group menus as a list, not as a clunky grid
+* Remove course "academic year" label because you know what year it is
+* Use normal capitalization for header tabs to match the rest of the interface and because the word "grades" is already frightening enough in lowercase
+* Disable school-colored links, which are used unevenly and clash with the traditional blue color scheme
+* Use fewer shades of grey for text
+* Style buttons in a similar way
+* Add flag emoji next to language selection, because reasons
+* Remove logged-in user's name from header because you probably don't need to be reminded who you are
+* Several hundred other graphical tweaks
 
 ## License
 [MIT](LICENSE)
