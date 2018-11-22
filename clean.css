@@ -298,7 +298,7 @@ form#privatemsg-new {}
 form#privatemsg-new {
     border-radius: 5px !important;
 }
-form#privatemsg-new label {
+.s_message_box ~ form#privatemsg-new label {
     display: none !important;
 }
 form#privatemsg-new #attachments #attachment-selector {
