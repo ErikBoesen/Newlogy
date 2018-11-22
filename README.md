@@ -26,6 +26,7 @@ Additionally note that the users of this extension are assumed to be students. S
 * Disable school-colored links, which are used unevenly and clash with the traditional blue color scheme
 * Use fewer shades of grey for text
 * Style buttons in a similar way
+* Replace bizarre smiley faces next to like buttons with thumbs up emoji
 * Add flag emoji next to language selection, because reasons
 * Remove logged-in user's name from header because you probably don't need to be reminded who you are
 * Several hundred other graphical tweaks
