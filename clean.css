@@ -164,12 +164,15 @@ div[role="menu"] button {
 .popups-box {
    padding: 0 !important;
    border-radius: 0 !important;
+   overflow: visible !important;
 }
 .popups-box .popups-body {
     padding: 0 !important;
 }
 .popups-box .submit-buttons {
-    display: none !important;
+    position: static !important;
+    background: white !important;
+    border: none !important;
 }
 
 #wrapper,
