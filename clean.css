@@ -137,6 +137,7 @@ footer a,
 .s-polls-refresh-poll,
 .ajax-post-comment {
     color: #0C88C2 !important;
+    text-decoration-color: #0C88C2 !important;
 }
 /* enforce consistent button styling */
 /* old-style components */
@@ -286,8 +287,7 @@ div[role="menu"] button {
 .comment .like-details-btn {
     background: none !important;
 }
-.s-like-sentence::before,
-.comment .like-details-btn::before {
+.like-btn::before {
     content: '👍 ';
 }
 .feed-comments {
@@ -297,6 +297,14 @@ div[role="menu"] button {
 .s-like-sentence,
 .comment {
     border: none !important;
+}
+.s-like-sentence::before,
+.comment .like-details-btn::before {
+    content: '(';
+}
+.s-like-sentence::after,
+.comment .like-details-btn::after {
+    content: ')';
 }
 .feed-comments textarea {
     /* On FF the text will get cut off if we just use padding to create height. */
