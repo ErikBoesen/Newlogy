@@ -133,6 +133,8 @@ nav[role="navigation"] ul:first-child div[role="menu"] article a > div:nth-of-ty
 #wrapper a,
 footer a,
 .like-btn span,
+/* poll refresh button */
+.s-polls-refresh-poll,
 .ajax-post-comment {
     color: #0C88C2 !important;
 }
