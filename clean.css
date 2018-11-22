@@ -293,6 +293,10 @@ input:focus {
 .message-view-row {
     border: none !important;
 }
+#center-top,
+.tabs.primary {
+    background: none !important;
+}
 /* TODO: this same styling could apply to many more elements, not just message box. Find more generic selector */
 form#privatemsg-new {}
 form#privatemsg-new {
