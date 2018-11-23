@@ -2,6 +2,12 @@
 
 Newlogy simplifies the [Schoology](https://schoology.com) Learning Management System interface, removing seldom-used components and streamlining styling.
 
+**Links:**
+* [Chrome](https://chrome.google.com/webstore/detail/newlogy/bjcabjilfhmoahlpkffklacegnndmbbb)
+* [Firefox](https://addons.mozilla.org/addon/newlogy)
+
+If on another browser, simply sideload this extension in developer mode.
+
 ### Before
 ![Before screenshot](screenshots/old.png)
 
@@ -27,6 +33,7 @@ Additionally note that the users of this extension are assumed to be students. S
 * Use fewer shades of grey for text
 * Style buttons in a similar way
 * Replace bizarre smiley faces next to like buttons with thumbs up emoji
+* Automatically load posts as you scroll
 * Add flag emoji next to language selection, because reasons
 * Remove logged-in user's name from header because you probably don't need to be reminded who you are
 * Several hundred other graphical tweaks
