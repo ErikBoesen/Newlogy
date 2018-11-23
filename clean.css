@@ -266,6 +266,9 @@ div[role="menu"] button {
 .attachments-link-left .inline-icon {
     padding-right: 5px !important;
 }
+.attachments-link-title {
+    margin-top: 5px !important;
+}
 /* Hide displayed URL. Looks nicer, though perhaps less safe. */
 .attachments-link-summary {
     display: none !important;
