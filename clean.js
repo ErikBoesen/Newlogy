@@ -26,15 +26,19 @@ lang.textContent = flags[lang.textContent] + ' ' + lang.textContent;
 
 const browser = window.browser || window.chrome;
 browser.storage.sync.get(['autoload'], function(items) {
-    console.log(items);
+    console.log('Newlogy settings loaded!', items);
     if (items.autoload || items.autoload == undefined) {
         // Automatically load more posts when scrolled to bottom of a feed page
         // TODO: allow disabling this in settings
         window.onscroll = function() {
             // TODO: also check if current scroll speed will bring us to the bottom
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - (window.innerHeight)) {
-                // Simulate clicking "More" button
-                document.querySelector('.sEdgeMore-processed').click();
+                try {
+                    // Simulate clicking "More" button
+                    document.querySelector('.sEdgeMore-processed').click();
+                } catch (e) {
+                    console.log('No "Load More" button found.');
+                }
             }
         };
     }
