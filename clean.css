@@ -288,6 +288,7 @@ div[role="menu"] button {
     background: none !important;
 }
 .like-btn {
+    text-decoration: none !important;
     margin-right: -1px;
 }
 .like-btn::before {
