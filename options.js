@@ -1,7 +1,9 @@
+const browser = window.browser || window.chrome;
+
 // Saves options to chrome.storage
 function save_options() {
     var likesColor = document.getElementById('like').checked;
-    chrome.storage.sync.set({
+    browser.storage.sync.set({
         likesColor: likesColor
     }, function() {
         // Update status to let user know options were saved.
@@ -17,7 +19,7 @@ function save_options() {
 // stored in chrome.storage.
 function restore_options() {
     // Use default value color = 'red' and likesColor = true.
-    chrome.storage.sync.get({
+    browser.storage.sync.get({
         likesColor: true
     }, function(items) {
         document.getElementById('like').checked = items.likesColor;
