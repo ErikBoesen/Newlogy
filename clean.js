@@ -24,9 +24,11 @@ var flags = {
 var lang = document.querySelector('footer button');
 lang.textContent = flags[lang.textContent] + ' ' + lang.textContent;
 
+// TODO: Load options at start
 const browser = window.browser || window.chrome;
 browser.storage.sync.get(['autoload'], function(items) {
-    console.log('Newlogy settings loaded!', items);
+    console.log('Newlogy settings loaded:');
+    console.log(items);
     if (items.autoload || items.autoload == undefined) {
         // Automatically load more posts when scrolled to bottom of a feed page
         // TODO: allow disabling this in settings
