@@ -2,9 +2,7 @@
 
 Newlogy simplifies the [Schoology](https://schoology.com) Learning Management System interface, removing seldom-used components and streamlining styling.
 
-**Links:**
-* [Chrome](https://chrome.google.com/webstore/detail/newlogy/bjcabjilfhmoahlpkffklacegnndmbbb)
-* [Firefox](https://addons.mozilla.org/addon/newlogy)
+[Install from the Chrome Web Store](https://chrome.google.com/webstore/detail/newlogy/bjcabjilfhmoahlpkffklacegnndmbbb)
 
 If on another browser, simply sideload this extension in developer mode.
 
