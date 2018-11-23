@@ -27,7 +27,7 @@ lang.textContent = flags[lang.textContent] + ' ' + lang.textContent;
 const browser = window.browser || window.chrome;
 browser.storage.sync.get(['autoload'], function(items) {
     console.log(items);
-    if (items.autoload) {
+    if (items.autoload || items.autoload == undefined) {
         // Automatically load more posts when scrolled to bottom of a feed page
         // TODO: allow disabling this in settings
         window.onscroll = function() {
