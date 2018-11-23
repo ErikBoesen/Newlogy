@@ -12,9 +12,7 @@ If on another browser, simply sideload this extension in developer mode.
 ### After
 ![After screenshot](screenshots/new.png)
 
-Please note that Newlogy was initially designed with the FCCPS version of Schoology in mind. The platform does not vary much between schools, so in theory it should work for any school. If you notice an inconsistency, please open an issue and we'll look into it.
-
-Additionally note that the users of this extension are assumed to be students. Some elements useful only to teachers might be inhibited. This is not intentional, but as students we have no way to test this extension on the teacher interface.
+Please open an issue if you notice any inconsistencies or opportunities to improve the Schoology interface!
 
 ## Goals
 * Unify design
