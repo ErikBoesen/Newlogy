@@ -18,11 +18,10 @@ function save_options() {
 // Restores select box and checkbox state using the preferences
 // stored in chrome.storage.
 function restore_options() {
-    // Use default value color = 'red' and likesColor = true.
     browser.storage.sync.get({
         autoload: true
     }, function(items) {
-        document.getElementById('autoload').checked = items.likesColor;
+        document.getElementById('autoload').checked = items.autoload;
     });
 }
 document.addEventListener('DOMContentLoaded', restore_options);
