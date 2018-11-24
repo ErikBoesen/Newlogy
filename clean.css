@@ -133,6 +133,8 @@ nav[role="navigation"] ul:first-child div[role="menu"] article a > div:nth-of-ty
 #wrapper a,
 /* "My Courses" and "My Groups" links in menus */
 nav[role="navigation"] ul:first-child div[role="menu"] ._3ghFm,
+/* Links in notifications menu */
+._2awxe._3skcp._1tpub a,
 footer a,
 .like-btn span,
 /* poll refresh button */
