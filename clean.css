@@ -135,6 +135,8 @@ nav[role="navigation"] ul:first-child div[role="menu"] article a > div:nth-of-ty
 nav[role="navigation"] ul:first-child div[role="menu"] ._3ghFm,
 /* Links in notifications menu */
 ._2awxe._3skcp._1tpub a,
+/* Profile dropdown options will disappear because we've removed their background. To compensate, just prevent them from changing color to white. */
+._2T2dA.Header-header-drop-menu-3SaYV a, ._2T2dA.Header-header-drop-menu-3SaYV a:hover,
 footer a,
 .like-btn span,
 /* poll refresh button */
