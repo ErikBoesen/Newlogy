@@ -131,6 +131,8 @@ nav[role="navigation"] ul:first-child div[role="menu"] article a > div:nth-of-ty
 
 /* Eliminate inconsistent school colored links */
 #wrapper a,
+/* "My Courses" and "My Groups" links in menus */
+div[role="menu"] ._3ghFm,
 footer a,
 .like-btn span,
 /* poll refresh button */
