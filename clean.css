@@ -395,6 +395,24 @@ h3#event-selector {
     display: none !important;
 }
 
+/* Submission viewer */
+/* "Submission Activity" header area at top of right sidebar */
+.dropbox-viewer-submission-activity,
+/* Bar button to hide/show right sidebar */
+#dropbox-viewer-right-toggle {
+    display: none !important;
+}
+/* Increase width to compensate for removing open/close button */
+#dropbox-viewer-right {
+    /* Normally 300px */
+    width: 320px !important;
+}
+/* Comment list */
+#dropbox-viewer-comments {
+    margin: 0 !important;
+    border-bottom: none !important;
+}
+
 /* Footer */
 footer nav {
     float: right !important;
