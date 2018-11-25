@@ -13,6 +13,27 @@ body, #main, #main-inner {
 #home-feed-container, .upcoming-events {
     box-shadow: none !important;
 }
+/* Override coloring */
+#wrapper,
+.s-like-sentence,
+.update-body,
+.update-body * {
+    /* TODO: use a simpler color everywhere */
+    color: #677583 !important;
+}
+/* TODO: clean up this messy overriding */
+.update-body a,
+.update-body a span {
+    color: #0C88C2 !important;
+}
+/* Sometimes when people copy and paste into the update composer the style will be odd. Correct for this. */
+.update-body * {
+    font-size: inherit !important;
+    font-family: inherit !important;
+}
+#wrapper * {
+    font-size: 14px !important;
+}
 
 /* Navigation header */
 #header {
@@ -138,6 +159,7 @@ nav[role="navigation"] ul:first-child div[role="menu"] ._3ghFm,
 /* Profile dropdown options will disappear because we've removed their background. To compensate, just prevent them from changing color to white. */
 ._2T2dA.Header-header-drop-menu-3SaYV a, ._2T2dA.Header-header-drop-menu-3SaYV a:hover,
 footer a,
+.update-body a,
 .like-btn span,
 /* poll refresh button */
 .s-polls-refresh-poll,
@@ -183,16 +205,6 @@ div[role="menu"] button {
     position: static !important;
     background: white !important;
     border: none !important;
-}
-
-#wrapper,
-.s-like-sentence,
-.update-body {
-    /* TODO: use a simpler color everywhere */
-    color: #677583 !important;
-}
-#wrapper * {
-    font-size: 14px !important;
 }
 
 /* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
