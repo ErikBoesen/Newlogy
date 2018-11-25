@@ -418,11 +418,26 @@ h3#event-selector {
 #dropbox-viewer-right {
     /* Normally 300px */
     width: 320px !important;
+    background-color: white !important;
 }
 /* Comment list */
 #dropbox-viewer-comments {
     margin: 0 !important;
     border-bottom: none !important;
+    box-shadow: none !important;
+}
+/* PDF viewer area */
+#dropbox-viewer-left {
+    padding-left: 10px !important;
+    background: white !important;
+}
+/* Readout of user's name at top */
+#dropbox-viewer-user-select-wrapper-outer.select-wrapper.single-user {
+    display: none !important;
+}
+/* Header has fixed width and needs to be made smaller to account for removal of name */
+#dropbox-viewer-header {
+    height: 20px !important;
 }
 
 /* Footer */
