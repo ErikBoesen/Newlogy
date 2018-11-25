@@ -439,6 +439,16 @@ h3#event-selector {
 #dropbox-viewer-header {
     height: 20px !important;
 }
+/* X button on dropbox interface */
+.popups-close {
+    /* Match default top property */
+    float: none !important;
+    position: fixed !important;
+    /* Fun story: this needs to cover #dropbox-viewer-right, which actually uses a z-index of 2000 */
+    /* in awe at the size of this z-index. absolute units */
+    z-index: 2001 !important;
+    right: 10px !important;
+}
 
 /* Footer */
 footer nav {
