@@ -159,7 +159,7 @@ nav[role="navigation"] ul:first-child div[role="menu"] ._3ghFm,
 /* Profile dropdown options will disappear because we've removed their background. To compensate, just prevent them from changing color to white. */
 ._2T2dA.Header-header-drop-menu-3SaYV a, ._2T2dA.Header-header-drop-menu-3SaYV a:hover,
 footer a,
-.update-body a,
+.feed-comments-viewall,
 .like-btn span,
 /* poll refresh button */
 .s-polls-refresh-poll,
