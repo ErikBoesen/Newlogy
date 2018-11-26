@@ -1,3 +1,5 @@
+console.log('Newlogy active');
+
 // Replace header logo with a plain Home button
 var nav = document.querySelector('nav[role="navigation"] ul');
 nav.removeChild(nav.childNodes[0]);
@@ -24,10 +26,12 @@ var flags = {
 var lang = document.querySelector('footer button');
 lang.textContent = flags[lang.textContent] + ' ' + lang.textContent;
 
+console.log('Loading options');
 // TODO: Load options at start
+console.log(browser);
 const browser = window.browser || window.chrome;
 browser.storage.sync.get(['autoload'], function(items) {
-    console.log('Newlogy settings loaded:');
+    console.log('Newlogy options loaded:');
     console.log(items);
     if (items.autoload || items.autoload == undefined) {
         // Automatically load more posts when scrolled to bottom of a feed page
