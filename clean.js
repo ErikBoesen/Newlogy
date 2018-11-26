@@ -28,7 +28,6 @@ lang.textContent = flags[lang.textContent] + ' ' + lang.textContent;
 
 console.log('Loading options');
 // TODO: Load options at start
-console.log(browser);
 const browser = window.browser || window.chrome;
 browser.storage.sync.get(['autoload'], function(items) {
     console.log('Newlogy options loaded:');

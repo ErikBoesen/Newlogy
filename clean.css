@@ -197,9 +197,9 @@ div[role="menu"] button {
 
 /* Used for "who liked this" popups, initial message compositions, etc. */
 .popups-box {
-   padding: 0 !important;
-   border-radius: 0 !important;
-   overflow: visible !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
 }
 .popups-box .popups-body {
     padding: 0 !important;
@@ -208,6 +208,10 @@ div[role="menu"] button {
     position: static !important;
     background: white !important;
     border: none !important;
+}
+.popups-box .comment-comment .comment-author a {
+    /* Looks waaaay too bold on some devices. TODO: fix this in a consistent way. */
+    /*font-weight: 400 !important;*/
 }
 
 /* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
