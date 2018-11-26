@@ -17,7 +17,8 @@ body, #main, #main-inner {
 #wrapper,
 .s-like-sentence,
 .update-body,
-.update-body * {
+.update-body *,
+.popups-body {
     /* TODO: use a simpler color everywhere */
     color: #677583 !important;
 }
