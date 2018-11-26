@@ -21,11 +21,6 @@ body, #main, #main-inner {
     /* TODO: use a simpler color everywhere */
     color: #677583 !important;
 }
-/* TODO: clean up this messy overriding */
-.update-body a,
-.update-body a span {
-    color: #0C88C2 !important;
-}
 /* Sometimes when people copy and paste into the update composer the style will be odd. Correct for this. */
 .update-body * {
     font-size: inherit !important;
@@ -166,6 +161,9 @@ footer a,
 /* poll refresh button */
 .s-polls-refresh-poll,
 .ajax-post-comment,
+/* override colors of links in specially formatted updates */
+.update-body a,
+.update-body a span,
 /* list of users in who liked this popup, and probably other things */
 .popups-body a {
     color: #0C88C2 !important;
