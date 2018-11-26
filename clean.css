@@ -163,7 +163,9 @@ footer a,
 .like-btn span,
 /* poll refresh button */
 .s-polls-refresh-poll,
-.ajax-post-comment {
+.ajax-post-comment,
+/* list of users in who liked this popup, and probably other things */
+.popups-body a {
     color: #0C88C2 !important;
     text-decoration-color: #0C88C2 !important;
 }
