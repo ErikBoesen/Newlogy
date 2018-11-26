@@ -200,9 +200,16 @@ div[role="menu"] button {
     padding: 0 !important;
     border-radius: 0 !important;
     overflow: visible !important;
+    border: none !important;
+}
+.popups-title {
+    background: #0C88C2 !important;
+    border: none !important;
 }
 .popups-box .popups-body {
     padding: 0 !important;
+    outline: none !important;
+    border-color: #0C88C2 !important;
 }
 .popups-box .submit-buttons {
     position: static !important;
@@ -215,15 +222,17 @@ div[role="menu"] button {
 }
 .update-comments-pagenation {
     /* pagination bar at top of view comments popup */
-    height: auto !important;
-    min-height: 0 !important;
     /* This way the bar won't show unless for some reason there are actually multiple pages.
      * I cannot imagine why these comments would even be paginated, much less split into their own separate popup window.
      * It just makes no sense. Why would you put so many layers on your UI?
      * If you want to protect people from scrolling, why not go all the way? Why would you allow them to scroll for a little while,
      * then make them change their mouse behavior to click on a tab that they shouldn't ever have to?
      * The mysteries of this website may forever elude me. */
+    height: auto !important;
+    min-height: 0 !important;
     padding: 0 !important;
+    background: none !important;
+    border: none !important;
 }
 .update-comments-pagenation .pagenation-count {
     display: none !important;
