@@ -455,9 +455,12 @@ form#privatemsg-new .cancel-btn {
 h3#event-selector {
     border: none !important;
 }
+/* TEMPORARILY DISABLED; apparently this causes problems in teacher interface */
+/*
 .left-block-wrapper {
     display: none !important;
 }
+*/
 
 /* Submission viewer */
 /* "Submission Activity" header area at top of right sidebar */
