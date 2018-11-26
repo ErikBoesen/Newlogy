@@ -447,7 +447,7 @@ h3#event-selector {
     height: calc(100% - 40px) !important;
 }
 /* X button on dropbox interface */
-.popups-close {
+.dropbox-viewer-header .popups-close {
     /* Match default top property */
     float: none !important;
     position: fixed !important;
