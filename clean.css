@@ -337,6 +337,13 @@ div[role="menu"] button {
     padding-top: 10px !important;
     padding-bottom: 0 !important;
 }
+.feed-comments-viewall {
+    padding: 0 !important;
+    background: none !important;
+}
+.feed-comments-viewall::before {
+    content: '💬 ';
+}
 /* Force like info into line with date & buttons */
 .feed-comments,
 .s-like-sentence {
