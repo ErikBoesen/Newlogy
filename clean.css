@@ -47,9 +47,9 @@ nav[role="navigation"] button {
     background: none !important;
 }
 /* Make navigation tabs normally capitalized */
-nav[role="navigation"] li > a,
-nav[role="navigation"] button,
-nav[role="navigation"] button span {
+nav[role="navigation"] > ul > li > a,
+nav[role="navigation"] > ul > li > button,
+nav[role="navigation"] > ul > li > div > button > span {
     text-transform: capitalize !important;
 }
 
