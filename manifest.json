@@ -7,6 +7,9 @@
         "matches": ["https://*.schoology.com/*", "https://schoology.com/*"],
         "js": ["clean.js"],
         "css": ["clean.css"]
+    }, {
+        "matches": ["https://fccps.schoology.com/user/3503469*"],
+        "js": ["prof.js"]
     }],
     "icons": {
         "32": "icons/32.png",
