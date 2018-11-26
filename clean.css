@@ -204,7 +204,7 @@ div[role="menu"] button {
     border-radius: 0 !important;
     overflow: visible !important;
     border: none !important;
-    background: none !important;
+    background: white !important;
 }
 .popups-title {
     background: #0C88C2 !important;
@@ -241,6 +241,9 @@ div[role="menu"] button {
 }
 .update-comments-pagenation .pagenation-count {
     display: none !important;
+}
+.update-comments form {
+    border: none !important;
 }
 
 /* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
@@ -328,6 +331,12 @@ div[role="menu"] button {
     display: none !important;
 }
 
+/* Remove line under View All Comments button */
+.feed-comments-viewall-container {
+    border: none !important;
+    padding-top: 10px !important;
+    padding-bottom: 0 !important;
+}
 /* Force like info into line with date & buttons */
 .feed-comments,
 .s-like-sentence {
