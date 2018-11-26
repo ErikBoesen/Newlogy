@@ -417,7 +417,7 @@ h3#event-selector {
 /* Increase width to compensate for removing open/close button */
 #dropbox-viewer-right {
     /* Normally 300px */
-    width: 320px !important;
+    width: 335px !important;
     background-color: white !important;
 }
 /* Comment list */
@@ -437,7 +437,12 @@ h3#event-selector {
 }
 /* Header has fixed width and needs to be made smaller to account for removal of name */
 #dropbox-viewer-header {
-    height: 20px !important;
+    height: 0 !important;
+}
+/* Document viewer box */
+.dropbox-viewer-item-wrapper {
+    /* Normally uses calc, so I will too */
+    height: calc(100% - 40px) !important;
 }
 /* X button on dropbox interface */
 .popups-close {
