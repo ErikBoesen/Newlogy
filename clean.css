@@ -195,12 +195,16 @@ div[role="menu"] button {
     fill: #0C88C2;
 }
 
-/* Used for "who liked this" popups, initial message compositions, etc. */
+/* Popups are used for "who liked this" popups, initial message compositions, etc. */
+#popups-overlay {
+    opacity: 0.2 !important;
+}
 .popups-box {
     padding: 0 !important;
     border-radius: 0 !important;
     overflow: visible !important;
     border: none !important;
+    background: none !important;
 }
 .popups-title {
     background: #0C88C2 !important;
@@ -209,7 +213,7 @@ div[role="menu"] button {
 .popups-box .popups-body {
     padding: 0 !important;
     outline: none !important;
-    border-color: #0C88C2 !important;
+    border: none !important;
 }
 .popups-box .submit-buttons {
     position: static !important;
@@ -233,6 +237,7 @@ div[role="menu"] button {
     padding: 0 !important;
     background: none !important;
     border: none !important;
+    outline: none !important;
 }
 .update-comments-pagenation .pagenation-count {
     display: none !important;
