@@ -31,7 +31,9 @@ body, #main, #main-inner {
     font-size: inherit !important;
     font-family: inherit !important;
 }
-#wrapper * {
+/* TODO: Couldn't we just do this for *? */
+#wrapper *,
+.popups-box * {
     font-size: 14px !important;
 }
 
