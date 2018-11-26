@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Newlogy",
     "description": "Clean up Schoology's interface and make it less ugly!",
-    "version": "1.2.3",
+    "version": "1.3",
     "content_scripts": [{
         "matches": ["https://*.schoology.com/*", "https://schoology.com/*"],
         "js": ["clean.js"],
