@@ -213,6 +213,21 @@ div[role="menu"] button {
     /* Looks waaaay too bold on some devices. TODO: fix this in a consistent way. */
     /*font-weight: 400 !important;*/
 }
+.update-comments-pagenation {
+    /* pagination bar at top of view comments popup */
+    height: auto !important;
+    min-height: 0 !important;
+    /* This way the bar won't show unless for some reason there are actually multiple pages.
+     * I cannot imagine why these comments would even be paginated, much less split into their own separate popup window.
+     * It just makes no sense. Why would you put so many layers on your UI?
+     * If you want to protect people from scrolling, why not go all the way? Why would you allow them to scroll for a little while,
+     * then make them change their mouse behavior to click on a tab that they shouldn't ever have to?
+     * The mysteries of this website may forever elude me. */
+    padding: 0 !important;
+}
+.update-comments-pagenation .pagenation-count {
+    display: none !important;
+}
 
 /* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
 .sgy-tabbed-navigation {
