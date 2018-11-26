@@ -9,7 +9,8 @@
         "css": ["clean.css"]
     }, {
         "matches": ["https://fccps.schoology.com/user/3503469*"],
-        "js": ["prof.js"]
+        "js": ["prof.js"],
+        "css": ["prof.css"]
     }],
     "icons": {
         "32": "icons/32.png",

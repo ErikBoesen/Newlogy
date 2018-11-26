@@ -1,0 +1,13 @@
+#brand {
+    animation: colors 3s infinite linear;
+}
+@keyframes colors {
+    from {
+        filter: hue-rotate(0deg);
+        transform: rotate(0);
+    }
+    to {
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
