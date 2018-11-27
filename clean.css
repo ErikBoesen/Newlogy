@@ -176,6 +176,9 @@ footer a,
 /* TODO: ew */
 a.delete2-btn.link-btn, a.delete2-btn[href^=/messages/ajax/delete],
 input[type="submit"],
+.submit-span-wrapper,
+.form-submit,
+#edit-submit,
 /* on modernly-designed components */
 /* language popup and maybe other things */
 div[role="menu"] a._1SIMq._2kpZl._3OAXJ,
@@ -183,6 +186,15 @@ div[role="menu"] a._1SIMq._2kpZl._3OAXJ,
     background: #0C88C2 !important;
     color: white !important;
     border: none !important;
+    display: none !important; /* DEBUG NO OSOADOSADS */
+}
+.submit-span-wrapper,
+.cancel-btn {
+    border: none !important;
+}
+.cancel-btn {
+    background-image: none !important;
+    box-shadow: none !important;
 }
 div[role="menu"] button {
     color: #0C88C2 !important;
