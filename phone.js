@@ -38,4 +38,8 @@ function select_user() {
             break;
         }
     }
+    click_send();
+}
+function click_send() {
+    document.getElementById('edit-submit').click();
 }
