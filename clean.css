@@ -285,8 +285,12 @@ div[role="menu"] button {
     padding-top: 1px !important;
     margin-top: -5px !important;
 }
-.upcoming-events h3 {
+/* Upcoming and Overdue headers */
+#right-column h3 {
     display: none !important;
+}
+.overdue-submissions {
+    padding-top: 1px !important;
 }
 .upcoming-events .date-header.first h4 {
     margin-top: 10px !important;
