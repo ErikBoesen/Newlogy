@@ -205,6 +205,7 @@ div[role="menu"] button {
     overflow: visible !important;
     border: none !important;
     background: white !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) !important;
 }
 .popups-title {
     background: #0C88C2 !important;
