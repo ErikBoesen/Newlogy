@@ -211,13 +211,18 @@ div[role="menu"] button {
 #popups-overlay {
     opacity: 0.2 !important;
 }
-.popups-box {
+.popups-box,
+#popups-loading {
     padding: 0 !important;
     border-radius: 0 !important;
     overflow: visible !important;
     border: none !important;
     background: white !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) !important;
+}
+#popups-loading div {
+    border: none !important;
+    background: none !important;
 }
 .popups-title {
     background: #0C88C2 !important;
