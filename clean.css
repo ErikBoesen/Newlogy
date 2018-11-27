@@ -170,15 +170,16 @@ footer a,
     color: #0C88C2 !important;
     text-decoration-color: #0C88C2 !important;
 }
-/* enforce consistent button styling */
+/* enforce consistent primary-button styling */
 /* old-style components */
 .submit-span-wrapper,
 /* TODO: ew */
 a.delete2-btn.link-btn, a.delete2-btn[href^=/messages/ajax/delete],
 input[type="submit"],
-.submit-span-wrapper,
 .form-submit,
 #edit-submit,
+/* join group buttons */
+.groups-enroll,
 /* on modernly-designed components */
 /* language popup and maybe other things */
 div[role="menu"] a._1SIMq._2kpZl._3OAXJ,
@@ -186,7 +187,12 @@ div[role="menu"] a._1SIMq._2kpZl._3OAXJ,
     background: #0C88C2 !important;
     color: white !important;
     border: none !important;
-    display: none !important; /* DEBUG NO OSOADOSADS */
+}
+/* TODO: WHY DOESN'T THIS WORK UNDER THE ABOVE SELECTOR?? */
+.groups-enroll {
+    background: white !important;
+    color: white !important;
+    border: none !important;
 }
 .submit-span-wrapper,
 .cancel-btn {
@@ -409,9 +415,6 @@ div[role="menu"] button {
     /* On FF the text will get cut off if we just use padding to create height. */
     padding: 5px 5px 0 !important;
     min-height: 1.7em !important;
-}
-.feed-comments .submit-span-wrapper {
-    border: none !important;
 }
 textarea:focus,
 input:focus {
