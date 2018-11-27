@@ -222,7 +222,7 @@ div[role="menu"] button {
 }
 #popups-loading div {
     border: none !important;
-    background: none !important;
+    background-color: none !important;
 }
 .popups-title {
     background: #0C88C2 !important;
