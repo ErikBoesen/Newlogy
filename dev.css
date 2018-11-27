@@ -1,19 +1,16 @@
 #brand {
-    animation: colors 1s infinite alternate-reverse ease-out;
+    animation: colors 3s infinite linear;
 }
 body {
-    transform: scaleX(-1) scaleY(-1);
-    overflow-x: hidden;
+    /* Flip profile page */
+    /*transform: scaleX(-1) scaleY(-1);
+    overflow-x: hidden;*/
 }
 @keyframes colors {
     from {
         filter: hue-rotate(0deg);
-        transform: rotate(0);
-        margin-top: 0;
     }
     to {
         filter: hue-rotate(360deg);
-        transform: rotate(360deg);
-        margin-top: 50px;
     }
 }
