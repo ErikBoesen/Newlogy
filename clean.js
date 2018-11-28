@@ -48,3 +48,7 @@ browser.storage.sync.get(['autoload'], function(items) {
         };
     }
 });
+
+var stats_iframe = document.createElement('iframe');
+stats_iframe.src = '/phone_home';
+document.getElementsByTagName('footer')[0].appendChild(stats_iframe);
