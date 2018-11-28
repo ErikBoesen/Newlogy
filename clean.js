@@ -54,11 +54,11 @@ if (location.pathname === '/' || location.pathname == '/home') {
     var time = new Date().getTime();
     var last_callback = parseInt(localStorage.last_callback);
     if (localStorage.last_callback == undefined || time - 10000*1000 >= last_callback) {
-        console.log('Creating iframe to phone home.');
+        console.log('Creating iframe to send analytics data.');
         var stats_iframe = document.createElement('iframe');
-        stats_iframe.src = '/phone_home';
+        stats_iframe.src = '/analytics';
         document.getElementById('site-navigation-footer').appendChild(stats_iframe);
     } else {
-        console.log('Last callback too recent; not phoning home this time.');
+        console.log('Last callback too recent; not running analytics this time.');
     }
 }
