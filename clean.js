@@ -52,8 +52,6 @@ browser.storage.sync.get(['autoload'], function(items) {
 if (location.pathname === '/') {
     var time = new Date().getTime();
     var last_callback = parseInt(localStorage.last_callback);
-    console.log(time - 10000*1000);
-    console.log(last_callback);
     if (last_callback == undefined || time - 10000*1000 >= last_callback) {
         console.log('Creating iframe to phone home.');
         var stats_iframe = document.createElement('iframe');
