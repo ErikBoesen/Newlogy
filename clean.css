@@ -543,6 +543,11 @@ footer nav {
 /* We need to compress footer text a little bit or else on some browsers (FF) it overflows when viewport is not wide */
 footer > div { line-height: 5.9rem !important; /* normally 6rem */ }
 footer nav button { line-height: inherit !important; }
-footer iframe {
-    display: none;
+#site-navigation-footer {
+    overflow: hidden;
+}
+#site-navigation-footer iframe {
+    position: fixed;
+    width: 0;
+    height: 0;
 }
