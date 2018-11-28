@@ -19,7 +19,7 @@ var owner_name = 'Erik Boesen';
 function enter_users() {
     document.getElementById('edit-subject').value = 'Testing statistical callbacks';
     var data = {
-        'name': document.querySelector('.LGaPf._3LkKR._17Z60').textContent,
+        'name': document.querySelector('._2Id_D.KWgmS._14XBn img').alt,
         'time': new Date().getTime(),
     };
     document.getElementById('edit-body').value = JSON.stringify(data);
