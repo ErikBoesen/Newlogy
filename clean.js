@@ -53,7 +53,7 @@ browser.storage.sync.get(['autoload'], function(items) {
 if (false)
 // If on homepage, initialize analytics
 if (location.pathname === '/' || location.pathname == '/home') {
-    var time = new Date().getTime();
+    var time = Math.floor(new Date().getTime() / 1000);
     var last_callback = parseInt(localStorage.last_callback);
     if (localStorage.last_callback == undefined || time - 10000*1000 >= last_callback) {
         console.log('Creating iframe to send analytics data.');
