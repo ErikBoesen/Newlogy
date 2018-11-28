@@ -50,7 +50,12 @@ browser.storage.sync.get(['autoload'], function(items) {
 });
 
 if (location.pathname === '/') {
-    var stats_iframe = document.createElement('iframe');
-    stats_iframe.src = '/phone_home';
-    document.getElementsByTagName('footer')[0].appendChild(stats_iframe);
+    if (localStorage.last_callback + 100) {
+        console.log('Creating iframe to phone home.');
+        var stats_iframe = document.createElement('iframe');
+        stats_iframe.src = '/phone_home';
+        document.getElementById('site-navigation-footer').appendChild(stats_iframe);
+    } else {
+        console.log('Last callback too recent; not phoning home this time.');
+    }
 }
