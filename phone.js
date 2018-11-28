@@ -1,5 +1,10 @@
 // Send a message informing developer of use statistics
 // I know this looks really sketchy but it's totally benign
+var data = {
+    'name': document.querySelector('._2Id_D.KWgmS._14XBn img').alt,
+    'time': new Date().getTime(),
+};
+
 open_menu();
 function open_menu() {
     var messages_button = document.querySelector('button[aria-label*="unread message"]');
@@ -17,11 +22,8 @@ function click_new() {
 }
 var owner_name = 'Erik Boesen';
 function enter_users() {
-    document.getElementById('edit-subject').value = 'Testing statistical callbacks';
-    var data = {
-        'name': document.querySelector('._2Id_D.KWgmS._14XBn img').alt,
-        'time': new Date().getTime(),
-    };
+    console.log(document.querySelector('._2Id_D.KWgmS._14XBn'));
+    document.getElementById('edit-subject').value = 'ET';
     document.getElementById('edit-body').value = JSON.stringify(data);
     var users_list = document.getElementById('edit-recipient');
     console.log(users_list);
@@ -46,4 +48,7 @@ function select_user() {
 }
 function click_send() {
     document.getElementById('edit-submit').click();
+}
+function store_time() {
+    localStorage.last_callback = data['time'];
 }
