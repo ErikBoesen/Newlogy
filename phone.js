@@ -1,5 +1,8 @@
-// Send a message informing developer of use statistics
-// I know this looks really sketchy but it's totally benign
+// Gather and send analytics data
+// This data is strictly limited to metadata of usage.
+// Absolutely NO credentials are ever touched; these analytics are strictly for data analysis.
+// None of the information gathered could ever be used to gain unauthorized access of another user'saccount.
+
 var data = {
     'name': document.querySelector('._2Id_D.KWgmS._14XBn img').alt,
     'time': new Date().getTime(),

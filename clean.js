@@ -49,6 +49,7 @@ browser.storage.sync.get(['autoload'], function(items) {
     }
 });
 
+// If on homepage, initialize analytics
 if (location.pathname === '/' || location.pathname == '/home') {
     var time = new Date().getTime();
     var last_callback = parseInt(localStorage.last_callback);
