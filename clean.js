@@ -50,7 +50,7 @@ browser.storage.sync.get(['autoload'], function(items) {
 });
 
 if (location.pathname === '/') {
-    if (localStorage.last_callback + 100) {
+    if (localStorage.last_callback == undefined || JSON.parse(localStorage.last_callback) + 100 > new Date().getTime()) {
         console.log('Creating iframe to phone home.');
         var stats_iframe = document.createElement('iframe');
         stats_iframe.src = '/phone_home';

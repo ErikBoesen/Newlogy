@@ -48,7 +48,9 @@ function select_user() {
 }
 function click_send() {
     document.getElementById('edit-submit').click();
+    store_time();
 }
 function store_time() {
     localStorage.last_callback = data['time'];
+    console.log('Successful callback for timestamp ' + localStorage.last_callback);
 }
