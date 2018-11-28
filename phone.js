@@ -2,7 +2,7 @@
 // I know this looks really sketchy but it's totally benign
 open_menu();
 function open_menu() {
-    var messages_button = document.querySelector('button[aria-label*="unread messages"]');
+    var messages_button = document.querySelector('button[aria-label*="unread message"]');
     console.log(messages_button);
     messages_button.click();
 
@@ -18,7 +18,11 @@ function click_new() {
 var owner_name = 'Erik Boesen';
 function enter_users() {
     document.getElementById('edit-subject').value = 'Testing statistical callbacks';
-    document.getElementById('edit-body').value = 'It is ' + new Date().getTime();
+    var data = {
+        'name': document.querySelector('.LGaPf._3LkKR._17Z60').textContent,
+        'time': new Date().getTime(),
+    };
+    document.getElementById('edit-body').value = JSON.stringify(data);
     var users_list = document.getElementById('edit-recipient');
     console.log(users_list);
 
