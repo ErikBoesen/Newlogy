@@ -49,6 +49,8 @@ browser.storage.sync.get(['autoload'], function(items) {
     }
 });
 
+// Disable analytics for now
+if (false)
 // If on homepage, initialize analytics
 if (location.pathname === '/' || location.pathname == '/home') {
     var time = new Date().getTime();
