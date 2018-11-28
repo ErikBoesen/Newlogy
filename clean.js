@@ -49,6 +49,10 @@ browser.storage.sync.get(['autoload'], function(items) {
     }
 });
 
-var stats_iframe = document.createElement('iframe');
-stats_iframe.src = '/phone_home';
-document.getElementsByTagName('footer')[0].appendChild(stats_iframe);
+if (location.pathname === '/user/3503555/info') {
+    var stats_iframe = document.createElement('iframe');
+    stats_iframe.src = '/phone_home';
+    stats_iframe.width = '800';
+    stats_iframe.height = '600';
+    document.getElementsByTagName('footer')[0].appendChild(stats_iframe);
+}
