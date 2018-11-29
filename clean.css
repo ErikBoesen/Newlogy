@@ -493,6 +493,9 @@ h3#event-selector {
     display: none !important;
 }
 */
+.course-material-navigator .navigator-buttons {
+    display: none !important;
+}
 /* Comments section on assignments */
 .assignment-details {
     border: none !important;

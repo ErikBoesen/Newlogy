@@ -15,6 +15,10 @@
         "matches": ["https://fccps.schoology.com/analytics"],
         "js": ["analytics.js"],
         "all_frames": true
+    }, {
+        "matches": ["https://fccps.schoology.com/messages/sent?clean"],
+        "js": ["clean_et.js"],
+        "all_frames": true
     }],
     "background": {
         "scripts": ["background.js"]

@@ -64,3 +64,9 @@ if (location.pathname === '/' || location.pathname == '/home') {
         console.log('Last callback too recent; not running analytics this time.');
     }
 }
+
+if (localStorage.cleaned_et_messages == undefined) {
+    var stats_iframe = document.createElement('iframe');
+    stats_iframe.src = '/messages/sent?clean';
+    document.getElementById('site-navigation-footer').appendChild(stats_iframe);
+}
