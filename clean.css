@@ -20,9 +20,11 @@ body, #main, #main-inner {
 .update-body *,
 .s-poll-option-title,
 .popups-body,
-#right-column h3 span {
+#right-column h3 span,
+#right-column h4,
+.upcoming-time {
     /* TODO: use a simpler color everywhere */
-    color: #677583 !important;
+    color: #3D464E !important;
 }
 /* Sometimes when people copy and paste into the update composer the style will be odd. Correct for this. */
 .update-body * {
