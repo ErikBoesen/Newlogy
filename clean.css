@@ -291,8 +291,8 @@ div[role="menu"] button {
     padding-top: 1px !important;
     margin-top: -5px !important;
 }
-/* Upcoming and Overdue headers */
-#right-column h3 {
+/* Upcoming and Overdue headers, homepage only */
+#right-column.sHome-processed h3 {
     display: none !important;
 }
 .overdue-submissions {
