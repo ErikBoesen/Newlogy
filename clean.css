@@ -493,6 +493,24 @@ h3#event-selector {
     display: none !important;
 }
 */
+/* Comments section on assignments */
+.assignment-details {
+    border: none !important;
+    padding-bottom: 0 !important;
+}
+/* Comments header and No comments indicator */
+.assignment-details ~ .comment-container .comment-container-header,
+.no-comments {
+    display: none !important;
+}
+/* Remove odd left space on comment box */
+.hide-label .form-item {
+    padding-left: 6px !important;
+    padding-top: 2px !important;
+}
+.hide-label + .submit-span-wrapper {
+    margin-left: 0 !important;
+}
 
 /* Submission viewer */
 /* "Submission Activity" header area at top of right sidebar */
