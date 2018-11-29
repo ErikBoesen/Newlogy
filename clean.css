@@ -457,6 +457,11 @@ form#privatemsg-new .cancel-btn {
 #center-top {
     border: none !important;
 }
+.content-top-upper {
+    border: none !important;
+    background: none !important;
+    padding-bottom: 0 !important;
+}
 .has-right-col #center-inner {
     /* For some reason this selector is used to create a grey border with a background image... so many bad decisions... */
     background: none !important;
@@ -467,7 +472,8 @@ form#privatemsg-new .cancel-btn {
 }
 /* "All Materials" dropdown and unnecessary padding */
 .materials-top {
-    display: none !important;
+    /* May be a problem in teacher interface? */
+    /*display: none !important;*/
 }
 /* Hide borders of resource items */
 .folder-contents-cell {
