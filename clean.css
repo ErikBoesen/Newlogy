@@ -18,7 +18,8 @@ body, #main, #main-inner {
 .s-like-sentence,
 .update-body,
 .update-body *,
-.popups-body {
+.popups-body,
+#right-column h3 span {
     /* TODO: use a simpler color everywhere */
     color: #677583 !important;
 }
