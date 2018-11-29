@@ -18,6 +18,7 @@ body, #main, #main-inner {
 .s-like-sentence,
 .update-body,
 .update-body *,
+.s-poll-option-title,
 .popups-body,
 #right-column h3 span {
     /* TODO: use a simpler color everywhere */
@@ -341,9 +342,6 @@ div[role="menu"] button {
 }
 .s-polls-poll-option {
     border-color: #eee !important;
-}
-.s-poll-option-title {
-    color: #677583 !important;
 }
 /* needs .edge-main qualifier to not interfere with file lists in course pages */
 .edge-main .inline-icon {
