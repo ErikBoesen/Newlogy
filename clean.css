@@ -30,6 +30,7 @@ body, #main, #main-inner {
 .update-body * {
     font-size: inherit !important;
     font-family: inherit !important;
+    background-color: inherit !important;
 }
 /* TODO: Couldn't we just do this for *? */
 #wrapper *,
