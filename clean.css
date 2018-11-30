@@ -119,8 +119,7 @@ nav[role="navigation"] ul:first-child div[role="menu"] ._3hM4e._3_a9F.zJU7e {
 }
 /* container immediately inside course card */
 ul:first-child ._36sHx._3M0N7.fjQuT._1EyV_,
-ul:first-child ._1Z0RM._1tpub
-{
+ul:first-child ._1Z0RM._1tpub {
     padding: 0 !important;
     height: auto !important;
 }
@@ -470,10 +469,18 @@ form#privatemsg-new .cancel-btn {
 .realm-top-right {
     display: none !important;
 }
-/* "All Materials" dropdown and unnecessary padding */
+/* "All Materials" dropdown container and unnecessary padding/line */
 .materials-top {
-    /* May be a problem in teacher interface? */
+    /* Hiding totally may be a problem in teacher interface? */
     /*display: none !important;*/
+    /* This way it will only show if there is anything inside */
+    min-height: 0 !important;
+    height: auto !important;
+    border: none !important;
+}
+.materials-filter-wrapper {
+    /* All Materials dropdown itself */
+    display: none !important;
 }
 /* Hide borders of resource items */
 .folder-contents-cell {
