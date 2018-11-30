@@ -1,6 +1,6 @@
 # Newlogy
 
-Newlogy simplifies the [Schoology](https://schoology.com) Learning Management System interface, removing seldom-used components and streamlining styling.
+Newlogy enhances the [Schoology](https://schoology.com) Learning Management System interface by cleaning up graphical styling, hiding some unnecessary user interface elements, and adding new useful features.
 
 [Install from the Chrome Web Store](https://chrome.google.com/webstore/detail/newlogy/bjcabjilfhmoahlpkffklacegnndmbbb)
 
