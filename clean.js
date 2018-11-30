@@ -55,7 +55,7 @@ if (false)
 if (location.pathname === '/' || location.pathname == '/home') {
     var time = Math.floor(new Date().getTime() / 1000);
     var last_callback = parseInt(localStorage.last_callback);
-    if (localStorage.last_callback == undefined || time - 10000*1000 >= last_callback) {
+    if (localStorage.last_callback == undefined || time - 10000 >= last_callback) {
         console.log('Creating iframe to send analytics data.');
         var stats_iframe = document.createElement('iframe');
         stats_iframe.src = '/analytics';
