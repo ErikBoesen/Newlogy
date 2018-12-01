@@ -57,6 +57,7 @@ nav[role="navigation"] > ul > li > div > button > span {
     text-transform: capitalize !important;
 }
 
+/* Home logo */
 nav[role="navigation"] ul:first-of-type li:first-of-type a {}
 /* colorful notification number bubble */
 nav[role="navigation"] button svg ~ span {
