@@ -36,12 +36,10 @@ browser.storage.sync.get(['autoload', 'floating_header', 'custom_css', 'enter_po
 
     if (items.enter_posts_comment) {
         onkeypress = function(e) {
-            console.log(e.shiftKey);
-            if (e.keyCode === 13 &&
-             !e.shiftKey &&
-              e.target.name === 'comment') {
+            if (e.keyCode === 13 && !e.shiftKey && e.target.name === 'comment') {
                 e.preventDefault();
                 console.log('Posting comment!');
+                e.target.parentNode.parentNode.nextSibling.childNodes[0].click();
             }
         };
     }
