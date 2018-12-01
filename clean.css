@@ -13,7 +13,7 @@ body, #main, #main-inner {
 #home-feed-container, .upcoming-events {
     box-shadow: none !important;
 }
-/* Override coloring */
+/* Override inconsistent text coloring */
 #wrapper,
 .s-like-sentence,
 .update-body,
@@ -22,7 +22,8 @@ body, #main, #main-inner {
 .popups-body,
 #right-column h3 span,
 #right-column h4,
-.upcoming-time {
+.upcoming-time,
+._1wP6w._3ghFm {
     color: #525D68 !important;
 }
 /* Sometimes when people copy and paste into the update composer the style will be odd. Correct for this. */
@@ -149,6 +150,15 @@ nav[role="navigation"] ul:first-child div[role="menu"] article a > div:nth-of-ty
     display: inline-block;
     width: 70% !important;
     vertical-align: middle !important;
+}
+/* Some menus have very odd font weights */
+/* Notifications */
+._2awxe._3skcp._26UWf._2nSV0 *,
+nav[role="navigation"] ul:nth-child(2) li,
+/* List items under profile menu */
+nav[role="navigation"] ul:nth-child(2) ._2JX1Q._3VHSs._1k0yk a {
+    /* This is a little too bold, in theory it would be nice to have a middle ground */
+    /*font-weight: 700 !important;*/
 }
 
 /* Eliminate inconsistent school colored links */
