@@ -10,3 +10,12 @@ label {
     display: block;
     padding: 3px 0;
 }
+a {
+    color: inherit;
+}
+input, textarea {
+    outline: none;
+}
+textarea {
+    color: inherit;
+}
