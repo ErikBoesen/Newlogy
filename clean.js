@@ -32,8 +32,7 @@ browser.storage.sync.get(['autoload', 'floating_header', 'custom_css'], function
 });
 
 // Footer options link
-document.querySelector('footer nav').innerHTML = '// <a href="' + browser.extension.getURL('options/options.html') + '">Newlogy Options ⚙️</a>';
-
+document.querySelector('footer nav').innerHTML = '// <a target="_blank" href="' + browser.extension.getURL('options/options.html') + '">Newlogy Options 🔧</a>';
 
 // Add flag to language selector
 var flags = {'en': '🇺🇸', 'en-GB': '🇬🇧', 'fr-corp': '🇫🇷', 'ja': '🇯🇵', 'ms': '🇲🇾', 'pt': '🇵🇹', 'es': '🇪🇸'};
