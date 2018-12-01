@@ -428,8 +428,15 @@ div[role="menu"] button {
 .feed-comments form {
     padding-left: 0 !important;
 }
+.feed-comments form .profile-picture img {
+    margin-top: 2px !important;
+}
 .feed-comments form.mouse-focus .form-item {
-    padding-left: 45px !important;
+    padding-left: 48px !important;
+}
+.feed-comments form.mouse-focus .submit-span-wrapper {
+    display: inline-block !important;
+    margin-left: 42px !important;
 }
 .s-like-sentence,
 .comment {
