@@ -15,6 +15,7 @@ body, #main, #main-inner {
 }
 /* Override inconsistent text coloring */
 #wrapper,
+.gray,
 .s-like-sentence,
 .update-body,
 .update-body *,
