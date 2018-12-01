@@ -16,8 +16,8 @@ oninput = save;
 browser.storage.sync.get({
     autoload: true,
     floating_header: false,
+    enter_posts_comment: false,
     custom_css: '',
-    enter_posts_comment: '',
 }, function(items) {
     document.getElementById('autoload').checked = items.autoload;
     document.getElementById('floating_header').checked = items.floating_header;
