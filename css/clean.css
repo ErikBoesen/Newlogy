@@ -428,6 +428,9 @@ div[role="menu"] button {
 .feed-comments form {
     padding-left: 0 !important;
 }
+.feed-comments form.mouse-focus .form-item {
+    padding-left: 45px !important;
+}
 .s-like-sentence,
 .comment {
     border: none !important;
