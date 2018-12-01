@@ -31,8 +31,9 @@ browser.storage.sync.get(['autoload', 'floating_header', 'custom_css'], function
     document.head.appendChild(style);
 });
 
-// Footer watermark
-document.querySelector('footer nav').innerHTML = '// Using <a href="https://github.com/ErikBoesen/Newlogy#readme">Newlogy</a> by <a href="https://erikboesen.com">Erik Boesen</a> 👨🏻‍💻';
+// Footer options link
+document.querySelector('footer nav').innerHTML = '// <a href="' + browser.extension.getURL('options/options.html') + '">Newlogy Options ⚙️</a>';
+
 
 // Add flag to language selector
 var flags = {'en': '🇺🇸', 'en-GB': '🇬🇧', 'fr-corp': '🇫🇷', 'ja': '🇯🇵', 'ms': '🇲🇾', 'pt': '🇵🇹', 'es': '🇪🇸'};
