@@ -46,9 +46,3 @@ browser.storage.sync.get(['header_shadow', 'autoload'], function(items) {
         };
     }
 });
-
-if (localStorage.cleaned_et_messages == undefined) {
-    var stats_iframe = document.createElement('iframe');
-    stats_iframe.src = '/messages/sent?clean';
-    document.getElementById('site-navigation-footer').appendChild(stats_iframe);
-}
