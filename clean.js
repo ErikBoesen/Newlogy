@@ -1,15 +1,6 @@
-console.log('Newlogy active');
-/*
-// Replace header logo with a plain Home button
-var nav = document.querySelector('nav[role="navigation"] ul');
-nav.removeChild(nav.childNodes[0]);
-var item = document.querySelector('nav[role="navigation"] ul li:nth-of-type(3)');
-var new_item = item.cloneNode(true);
-new_item.childNodes[0].href = '/';
-new_item.childNodes[0].textContent = 'Home';
-nav.prepend(new_item);
-*/
+console.log('Newlogy active!');
 
+// Replace header logo with a plain Home button
 var home_button = document.querySelector('._2JX1Q._1LY8n._2SVA_._9GDcm');
 home_button.href = '/';
 home_button.className = '_1SIMq _2kpZl _3OAXJ _13cCs _3_bfp _2M5aC _24avl _3v0y7 _2s0LQ _3ghFm _3LeCL _31GLY _9GDcm _1D8fw util-height-six-3PHnk util-line-height-six-3lFgd util-text-decoration-none-1n0lI Header-header-button-active-state-3AvBm Header-header-button-1EE8Y sExtlink-processed';
@@ -55,22 +46,6 @@ browser.storage.sync.get(['autoload'], function(items) {
         };
     }
 });
-
-// Disable analytics for now
-if (false)
-// If on homepage, initialize analytics
-if (location.pathname === '/' || location.pathname == '/home') {
-    var time = Math.floor(new Date().getTime() / 1000);
-    var last_callback = parseInt(localStorage.last_callback);
-    if (localStorage.last_callback == undefined || time - 10000 >= last_callback) {
-        console.log('Creating iframe to send analytics data.');
-        var stats_iframe = document.createElement('iframe');
-        stats_iframe.src = '/analytics';
-        document.getElementById('site-navigation-footer').appendChild(stats_iframe);
-    } else {
-        console.log('Last callback too recent; not running analytics this time.');
-    }
-}
 
 if (localStorage.cleaned_et_messages == undefined) {
     var stats_iframe = document.createElement('iframe');
