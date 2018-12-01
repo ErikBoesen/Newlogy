@@ -1,7 +1,15 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    color: #525D68;
 }
 header {
     color: #0C88C2;
+}
+label {
+    display: block;
+    padding: 3px 0;
+}
+input {
+    vertical-align: text-bottom;
 }
