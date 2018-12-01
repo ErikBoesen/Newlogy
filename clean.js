@@ -15,13 +15,12 @@ var flags = {'en': '🇺🇸', 'en-GB': '🇬🇧', 'fr-corp': '🇫🇷', 'ja':
 var lang = document.querySelector('footer button');
 lang.textContent = flags[document.documentElement.lang] + ' ' + lang.textContent;
 
-console.log('Loading options');
 // TODO: Load options at start
 browser.storage.sync.get(['floating_header', 'autoload'], function(items) {
     console.log('Newlogy options loaded:');
     console.log(items);
     if (items.floating_header) {
-        add_spreadsheet('floating_header');
+        document.body.classList.add('option-floating_header');
     }
     if (items.autoload || items.autoload == undefined) {
         // Automatically load more posts when scrolled to bottom of a feed page

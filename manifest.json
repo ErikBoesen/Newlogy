@@ -10,11 +10,11 @@
     "content_scripts": [{
         "matches": ["https://*.schoology.com/*", "https://schoology.com/*"],
         "js": ["clean.js"],
-        "css": ["clean.css"]
+        "css": ["css/clean.css", "css/floating_header.css"]
     }, {
         "matches": ["https://fccps.schoology.com/user/3503469*"],
         "js": ["dev.js"],
-        "css": ["dev.css"]
+        "css": ["css/dev.css"]
     }],
     "background": {
         "scripts": ["background.js"]
