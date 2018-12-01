@@ -6,9 +6,8 @@ home_button.style = '';
 home_button.childNodes[0].className = '';
 
 const browser = window.browser || window.chrome;
-
 // TODO: Load options at start
-browser.storage.sync.get(['floating_header', 'autoload'], function(items) {
+browser.storage.sync.get(['autoload', 'floating_header', 'custom_css'], function(items) {
     console.log('Newlogy options loaded:');
     console.log(items);
     if (items.floating_header) {
@@ -27,6 +26,9 @@ browser.storage.sync.get(['floating_header', 'autoload'], function(items) {
             }
         };
     }
+    var style = document.createElement('style');
+    style.innerHTML = items.custom_css;
+    document.head.appendChild(style);
 });
 
 // Footer watermark
