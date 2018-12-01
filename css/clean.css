@@ -181,6 +181,7 @@ nav[role="navigation"] ul:first-child div[role="menu"] ._3ghFm,
 ._2T2dA.Header-header-drop-menu-3SaYV a, ._2T2dA.Header-header-drop-menu-3SaYV a:hover,
 footer a,
 .feed-comments-viewall,
+.like-btn,
 .like-btn span,
 /* poll refresh button */
 .s-polls-refresh-poll,
@@ -188,14 +189,16 @@ footer a,
 /* override colors of links in specially formatted updates */
 .update-body a,
 .update-body a span,
+.submit-assignment a,
 /* list of users in who liked this popup, and probably other things */
-.popups-body a {
+.popups-body a:not(.submit-btn) {
     color: #0C88C2 !important;
     text-decoration-color: #0C88C2 !important;
 }
 /* enforce consistent primary-button styling */
 /* old-style components */
 .submit-span-wrapper,
+.submit-btn,
 /* TODO: ew */
 a.delete2-btn.link-btn, a.delete2-btn[href^=/messages/ajax/delete],
 input[type="submit"],
