@@ -1,5 +1,3 @@
-console.log('Newlogy active!');
-
 // Replace header logo with a plain Home button
 var home_button = document.querySelector('._2JX1Q._1LY8n._2SVA_._9GDcm');
 home_button.href = '/';
@@ -13,16 +11,16 @@ document.querySelector('footer nav').innerHTML = '// Using <a href="https://gith
 
 // Add flag to language selector
 var flags = {
-    'English': '🇺🇸',
-    'English (UK)': '🇬🇧',
-    'Français des Affaires': '🇫🇷',
-    '日本語': '🇯🇵',
-    'Bahasa Melayu': '🇲🇾',
-    'Português': '🇵🇹',
-    'Español': '🇪🇸',
+    'en': '🇺🇸',
+    'en-GB': '🇬🇧',
+    'fr-corp': '🇫🇷',
+    'ja': '🇯🇵',
+    'ms': '🇲🇾',
+    'pt': '🇵🇹',
+    'es': '🇪🇸',
 };
 var lang = document.querySelector('footer button');
-lang.textContent = flags[lang.textContent] + ' ' + lang.textContent;
+lang.textContent = flags[document.documentElement.lang] + ' ' + lang.textContent;
 
 console.log('Loading options');
 // TODO: Load options at start
