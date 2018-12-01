@@ -3,7 +3,7 @@ body {
     font-size: 14px;
     color: #525D68;
 }
-header {
+h1, h2 {
     color: #0C88C2;
 }
 label {
