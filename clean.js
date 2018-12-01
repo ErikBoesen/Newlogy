@@ -28,7 +28,7 @@ browser.storage.sync.get(['header_shadow', 'autoload'], function(items) {
     console.log('Newlogy options loaded:');
     console.log(items);
     if (items.header_shadow) {
-        document.getElementById('header').style.boxShadow = '0 0 5px rgba(0, 0, 0.4)';
+        document.getElementById('header').style.boxShadow = '0 0 5px rgba(0, 0, 0.1)';
     }
     if (items.autoload || items.autoload == undefined) {
         // Automatically load more posts when scrolled to bottom of a feed page
