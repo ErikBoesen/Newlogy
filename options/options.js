@@ -1,12 +1,11 @@
 const browser = window.browser || window.chrome;
 
 function save() {
-    var autoload = document.getElementById('autoload').checked;
     browser.storage.sync.set({
-        autoload: autoload
+        autoload: document.getElementById('autoload').checked,
+        header_shadow: document.getElementById('header_shadow').checked
     }, function() {
-        // Update status to let user know options were saved.
-        var status = document.getElementById('status');
+        console.log('Options saved.');
     });
 }
 
@@ -16,4 +15,5 @@ browser.storage.sync.get({
     autoload: true
 }, function(items) {
     document.getElementById('autoload').checked = items.autoload;
+    document.getElementById('header_shadow').checked = items.header_shadow;
 });
