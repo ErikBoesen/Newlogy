@@ -1,7 +1,9 @@
-body.floating_header {
+body.option-floating_header #body {
     padding-top: 60px !important;
 }
-body.floating_header #header {
+body.option-floating_header #header {
     position: fixed !important;
-    box-shadow: 0 0 5px rgba(0, 0, 0.1);
+    top: 0 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: .4s box-shadow;
 }
