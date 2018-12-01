@@ -376,6 +376,10 @@ div[role="menu"] button {
 .attachments-link-summary {
     display: none !important;
 }
+.attachments-file-thumbnail a {
+    border: none !important;
+    padding: 0 !important;
+}
 
 /* Remove line under View All Comments button */
 .feed-comments-viewall-container {
