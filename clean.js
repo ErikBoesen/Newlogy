@@ -7,14 +7,6 @@ home_button.childNodes[0].className = '';
 
 const browser = window.browser || window.chrome;
 
-// Watermark
-document.querySelector('footer nav').innerHTML = '// Using <a href="https://github.com/ErikBoesen/Newlogy#readme">Newlogy</a> by <a href="https://erikboesen.com">Erik Boesen</a> 👨🏻‍💻';
-
-// Add flag to language selector
-var flags = {'en': '🇺🇸', 'en-GB': '🇬🇧', 'fr-corp': '🇫🇷', 'ja': '🇯🇵', 'ms': '🇲🇾', 'pt': '🇵🇹', 'es': '🇪🇸'};
-var lang = document.querySelector('footer button');
-lang.textContent = flags[document.documentElement.lang] + ' ' + lang.textContent;
-
 // TODO: Load options at start
 browser.storage.sync.get(['floating_header', 'autoload'], function(items) {
     console.log('Newlogy options loaded:');
@@ -38,3 +30,11 @@ browser.storage.sync.get(['floating_header', 'autoload'], function(items) {
         };
     }
 });
+
+// Footer watermark
+document.querySelector('footer nav').innerHTML = '// Using <a href="https://github.com/ErikBoesen/Newlogy#readme">Newlogy</a> by <a href="https://erikboesen.com">Erik Boesen</a> 👨🏻‍💻';
+
+// Add flag to language selector
+var flags = {'en': '🇺🇸', 'en-GB': '🇬🇧', 'fr-corp': '🇫🇷', 'ja': '🇯🇵', 'ms': '🇲🇾', 'pt': '🇵🇹', 'es': '🇪🇸'};
+var lang = document.querySelector('footer button');
+lang.textContent = flags[document.documentElement.lang] + ' ' + lang.textContent;
