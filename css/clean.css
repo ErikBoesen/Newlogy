@@ -191,7 +191,8 @@ footer a,
 .update-body a span,
 .submit-assignment a,
 /* list of users in who liked this popup, and probably other things */
-.popups-body a:not(.submit-btn) {
+.popups-body a:not(.submit-btn),
+.popups-tab {
     color: #0C88C2 !important;
     text-decoration-color: #0C88C2 !important;
 }
@@ -259,6 +260,9 @@ div[role="menu"] button {
 .popups-title {
     background: #0C88C2 !important;
     border: none !important;
+}
+.popups-tabs {
+    background: none !important;
 }
 .popups-box .popups-body {
     padding: 0 !important;
@@ -463,7 +467,9 @@ form#privatemsg-new {
 .s_message_box ~ form#privatemsg-new label {
     display: none !important;
 }
-form#privatemsg-new #attachments #attachment-selector {
+form#privatemsg-new #attachments #attachment-selector,
+/* In submission popups and elsewhere */
+#attachment-links {
     margin-top: 2px;
     border: none !important;
     background: none !important;
