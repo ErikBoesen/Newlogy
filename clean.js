@@ -5,30 +5,23 @@ home_button.className = '_1SIMq _2kpZl _3OAXJ _13cCs _3_bfp _2M5aC _24avl _3v0y7
 home_button.style = '';
 home_button.childNodes[0].className = '';
 
-// Watermark footer
+const browser = window.browser || window.chrome;
+
+// Watermark
 document.querySelector('footer nav').innerHTML = '// Using <a href="https://github.com/ErikBoesen/Newlogy#readme">Newlogy</a> by <a href="https://erikboesen.com">Erik Boesen</a> 👨🏻‍💻';
 
 // Add flag to language selector
-var flags = {
-    'en': '🇺🇸',
-    'en-GB': '🇬🇧',
-    'fr-corp': '🇫🇷',
-    'ja': '🇯🇵',
-    'ms': '🇲🇾',
-    'pt': '🇵🇹',
-    'es': '🇪🇸',
-};
+var flags = {'en': '🇺🇸', 'en-GB': '🇬🇧', 'fr-corp': '🇫🇷', 'ja': '🇯🇵', 'ms': '🇲🇾', 'pt': '🇵🇹', 'es': '🇪🇸'};
 var lang = document.querySelector('footer button');
 lang.textContent = flags[document.documentElement.lang] + ' ' + lang.textContent;
 
 console.log('Loading options');
 // TODO: Load options at start
-const browser = window.browser || window.chrome;
-browser.storage.sync.get(['header_shadow', 'autoload'], function(items) {
+browser.storage.sync.get(['floating_header', 'autoload'], function(items) {
     console.log('Newlogy options loaded:');
     console.log(items);
-    if (items.header_shadow) {
-        document.getElementById('header').style.boxShadow = '0 0 5px rgba(0, 0, 0.1)';
+    if (items.floating_header) {
+        add_spreadsheet('floating_header');
     }
     if (items.autoload || items.autoload == undefined) {
         // Automatically load more posts when scrolled to bottom of a feed page
