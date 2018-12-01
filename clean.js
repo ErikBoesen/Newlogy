@@ -10,9 +10,11 @@ const browser = window.browser || window.chrome;
 browser.storage.sync.get(['autoload', 'floating_header', 'custom_css'], function(items) {
     console.log('Newlogy options loaded:');
     console.log(items);
+
     if (items.floating_header) {
         document.body.classList.add('option-floating_header');
     }
+
     if (items.autoload || items.autoload == undefined) {
         // Automatically load more posts when scrolled to bottom of a feed page
         window.onscroll = function() {
@@ -26,9 +28,19 @@ browser.storage.sync.get(['autoload', 'floating_header', 'custom_css'], function
             }
         };
     }
-    var style = document.createElement('style');
-    style.innerHTML = items.custom_css;
-    document.head.appendChild(style);
+
+    if (items.custom_css) {
+        var style = document.createElement('style');
+        style.innerHTML = items.custom_css;
+        document.head.appendChild(style);
+    }
+
+    if (items.enter_posts_comment) {
+        onkeypressed = function(e) {
+            var k = e.keyCode();
+            console.log(k);
+        }
+    }
 });
 
 // Footer options link
