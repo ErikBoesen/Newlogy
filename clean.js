@@ -6,8 +6,7 @@ home_button.style = '';
 home_button.childNodes[0].className = '';
 
 const browser = window.browser || window.chrome;
-// TODO: Load options at start
-browser.storage.sync.get(['autoload', 'floating_header', 'custom_css'], function(items) {
+browser.storage.sync.get(['autoload', 'floating_header', 'custom_css', 'enter_posts_comment'], function(items) {
     console.log('Newlogy options loaded:');
     console.log(items);
 
@@ -36,10 +35,15 @@ browser.storage.sync.get(['autoload', 'floating_header', 'custom_css'], function
     }
 
     if (items.enter_posts_comment) {
-        onkeypressed = function(e) {
-            var k = e.keyCode();
-            console.log(k);
-        }
+        onkeypress = function(e) {
+            console.log(e.shiftKey);
+            if (e.keyCode === 13 &&
+             !e.shiftKey &&
+              e.target.name === 'comment') {
+                e.preventDefault();
+                console.log('Posting comment!');
+            }
+        };
     }
 });
 
