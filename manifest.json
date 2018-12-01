@@ -15,10 +15,6 @@
         "matches": ["https://fccps.schoology.com/user/3503469*"],
         "js": ["dev.js"],
         "css": ["dev.css"]
-    }, {
-        "matches": ["https://fccps.schoology.com/messages/sent?clean"],
-        "js": ["clean_et.js"],
-        "all_frames": true
     }],
     "background": {
         "scripts": ["background.js"]
