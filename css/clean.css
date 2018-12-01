@@ -499,7 +499,7 @@ form#privatemsg-new .cancel-btn {
     height: auto !important;
     border: none !important;
 }
-.materials-filter-wrapper {
+.materials-filter-wrapper, #edge-filters {
     /* All Materials dropdown itself */
     display: none !important;
 }
