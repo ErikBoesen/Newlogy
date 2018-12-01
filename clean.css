@@ -59,6 +59,10 @@ nav[role="navigation"] > ul > li > div > button > span {
 
 /* Home logo */
 nav[role="navigation"] ul:first-of-type li:first-of-type a {}
+/* Make logo box a reasonable width until the class is removed. This way there won't be an awkward jump left */
+._2JX1Q._1LY8n._2SVA_._9GDcm {
+    width: 55px !important;
+}
 /* colorful notification number bubble */
 nav[role="navigation"] button svg ~ span {
     border: none !important;
