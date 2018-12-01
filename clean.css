@@ -124,6 +124,10 @@ nav[role="navigation"] ul:first-child div[role="menu"] ._3hM4e._3_a9F.zJU7e {
     outline: none !important;
     margin-bottom: 5px !important;
 }
+/* Extra course items are created to make a perfect grid. Hide any of them without content. */
+nav[role="navigation"] ul:first-child div[role="menu"] ._3hM4e._3_a9F.zJU7e:empty {
+    display: none !important;
+}
 /* container immediately inside course card */
 ul:first-child ._36sHx._3M0N7.fjQuT._1EyV_,
 ul:first-child ._1Z0RM._1tpub {
