@@ -5,14 +5,3 @@ body {
 header {
     color: #0C88C2;
 }
-#save {
-    margin: 10px 0;
-}
-button {
-    display: block;
-    background: #0C88C2;
-    border: none;
-    padding: 8px 10px;
-    color: white;
-    font-weight: bold;
-}
