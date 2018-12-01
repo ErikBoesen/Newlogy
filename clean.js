@@ -5,8 +5,7 @@ home_button.className = '_1SIMq _2kpZl _3OAXJ _13cCs _3_bfp _2M5aC _24avl _3v0y7
 home_button.style = '';
 home_button.childNodes[0].className = '';
 
-// Add watermark in footer
-// Use of innerHTML is safe here since no content is drawn from external/untrusted sources
+// Watermark footer
 document.querySelector('footer nav').innerHTML = '// Using <a href="https://github.com/ErikBoesen/Newlogy#readme">Newlogy</a> by <a href="https://erikboesen.com">Erik Boesen</a> 👨🏻‍💻';
 
 // Add flag to language selector
@@ -25,9 +24,12 @@ lang.textContent = flags[document.documentElement.lang] + ' ' + lang.textContent
 console.log('Loading options');
 // TODO: Load options at start
 const browser = window.browser || window.chrome;
-browser.storage.sync.get(['autoload'], function(items) {
+browser.storage.sync.get(['header_shadow', 'autoload'], function(items) {
     console.log('Newlogy options loaded:');
     console.log(items);
+    if (items.header_shadow) {
+        document.getElementById('header').style.boxShadow = '0 0 5px rgba(0, 0, 0.4)';
+    }
     if (items.autoload || items.autoload == undefined) {
         // Automatically load more posts when scrolled to bottom of a feed page
         // TODO: allow disabling this in settings
