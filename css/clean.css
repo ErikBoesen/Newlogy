@@ -611,6 +611,9 @@ h3#event-selector {
     right: 15px !important;
 }
 
+body #wrapper #footer {
+    background: none !important;
+}
 /* Footer */
 footer nav {
     float: right !important;
