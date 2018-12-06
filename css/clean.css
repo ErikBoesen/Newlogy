@@ -359,9 +359,14 @@ div[role="menu"] button {
 .update-body {
     margin-top: 3px !important;
 }
-/* Scale down link icons */
-.attachments-link.clearfix {
+/* Fix padding on attachment icons */
+/* On assignment pages padding is used differently so we must exclude them */
+.attachments.clearfix > div,
+.attachments.clearfix > div > div {
     padding: 0 !important;
+}
+.attachments > div {
+    margin: 10px 0 !important;
 }
 .s-polls-poll-option {
     border-color: #eee !important;
