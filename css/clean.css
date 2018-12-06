@@ -630,6 +630,9 @@ footer nav button { line-height: inherit !important; }
 
 
 /* TEMPORARY */
+#s-like-c-436793790::before {
+    content: '🙄 ' !important;
+}
 #s-like-c-436793790 .content {
     width: 0 !important;
     visibility: hidden !important;
