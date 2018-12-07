@@ -19,3 +19,15 @@ input, textarea {
 textarea {
     color: inherit;
 }
+
+.new {
+    display: inline-block;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+}
+.new::after {
+    content: 'NEW';
+}
