@@ -300,6 +300,15 @@ div[role="menu"] button {
 .update-comments form {
     border: none !important;
 }
+/* Hanging thing at bottom of resources submit which just says how to submit */
+.content-app-import-view-msg {
+    display: none !important;
+}
+#dropbox-submit-resources-tab-content .submit-buttons.import-view-submit-buttons {
+    min-height: 0 !important;
+    height: auto !important;
+    background: none !important;
+}
 
 /* Course Dashboard tab, which I have never had a genuine reason to click on, and matching right column margin */
 .sgy-tabbed-navigation {
