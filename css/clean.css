@@ -304,6 +304,7 @@ div[role="menu"] button {
 .content-app-import-view-msg {
     display: none !important;
 }
+/* Remove submit button background or get rid of hangover if there's no content */
 #dropbox-submit-resources-tab-content .submit-buttons.import-view-submit-buttons {
     min-height: 0 !important;
     height: auto !important;

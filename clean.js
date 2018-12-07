@@ -5,6 +5,7 @@ home_button.className = '_1SIMq _2kpZl _3OAXJ _13cCs _3_bfp _2M5aC _24avl _3v0y7
 home_button.style = '';
 home_button.childNodes[0].className = '';
 
+// Simulate linking for full notification item
 var notification_selector = 'div._2awxe._3skcp._1tpub._26UWf._2nSV0'
 onclick = function(e) {
     // Check if user clicked on notification item or anything inside of one
