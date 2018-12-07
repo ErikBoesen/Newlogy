@@ -5,6 +5,20 @@ home_button.className = '_1SIMq _2kpZl _3OAXJ _13cCs _3_bfp _2M5aC _24avl _3v0y7
 home_button.style = '';
 home_button.childNodes[0].className = '';
 
+var notification_selector = 'div._2awxe._3skcp._1tpub._26UWf._2nSV0'
+onclick = function(e) {
+    // Check if user clicked on notification item or anything inside of one
+    if (e.target.matches(notification_selector + ',' + notification_selector + ' *')) {
+        // Go up the chain to find the actual notification div
+        var target = e.target;
+        while (!target.matches(notification_selector)) {
+            target = target.parentNode;
+        }
+
+        window.location.href = target.getElementsByTagName('a')[0].href;
+    }
+}
+
 const browser = window.browser || window.chrome;
 browser.storage.sync.get(['autoload', 'floating_header', 'custom_css', 'enter_posts_comment'], function(items) {
     console.log('Newlogy options loaded:');
