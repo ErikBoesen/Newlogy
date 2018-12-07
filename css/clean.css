@@ -171,6 +171,12 @@ nav[role="navigation"] ul:nth-child(2) ._2JX1Q._3VHSs._1k0yk a {
     /*font-weight: 700 !important;*/
 }
 
+/* Notification elements; need to make cursor pointer for accompanying JS feature*/
+div._2awxe._3skcp._1tpub._26UWf._2nSV0 {
+    cursor: pointer;
+}
+
+
 /* Eliminate inconsistent school colored links */
 #wrapper a,
 /* "My Courses" and "My Groups" links in menus */
