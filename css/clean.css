@@ -651,24 +651,3 @@ footer nav button { line-height: inherit !important; }
     width: 0;
     height: 0;
 }
-
-
-/* TEMPORARY */
-#s-like-c-436793790::before {
-    content: '🙄 ' !important;
-}
-#s-like-c-436793790 .content {
-    width: 0 !important;
-    visibility: hidden !important;
-    font-size: 0 !important;
-}
-#s-like-c-436793790 .content::before {
-    font-size: 14px !important;
-    content: 'Dislike';
-    color: red !important;
-    visibility: visible;
-}
-#s-like-c-436793790  + span a,
-#s-like-c-436793790  + span span {
-    color: red !important;
-}
