@@ -115,7 +115,7 @@ Drupal.behaviors.extlink = function(context){
       if(href.indexOf('mailto:') === 0 && $link.find('img:first').length === 0){
         $link.addClass(mailtoClass);
         if($link.css('display') == 'inline'){
-          $link.after('<span class=' + mailtoClass + '></span>'); 
+          $link.after('<span class=' + mailtoClass + '></span>');
         }
       }
     });
@@ -1541,7 +1541,7 @@ Drupal.theme.prototype.popupTemplate = function(popupId) {
   template += '</div>';
   return template;
 };
-;Drupal.theme.prototype.popupTemplate = function(popupId) { 
+;Drupal.theme.prototype.popupTemplate = function(popupId) {
   var template = '';
   template += '<div id="'+ popupId + '" class="popups-box" role="dialog">';
   template += '  <div class="popups-title">';
@@ -1765,7 +1765,7 @@ Drupal.theme.prototype.popupTemplate = function(popupId) {
 			  }
 		  });
 	  }
-	  
+
     var upcomingWrapper = $('.upcoming-events' , rightColumnObj );
     if( upcomingWrapper.length > 0 ) {
       $.ajax({
@@ -1893,9 +1893,9 @@ function sHomeResetSwfu(){
         // clicking somewhere on the form should close the copy to courses box
         var target = $(e.target);
         if(!target.is('#addl-courses') &&
-          !target.is('.toggle-copy') && 
-          target.closest('#addl-courses').length == 0 && 
-          target.closest('.toggle-copy').length == 0 && 
+          !target.is('.toggle-copy') &&
+          target.closest('#addl-courses').length == 0 &&
+          target.closest('.toggle-copy').length == 0 &&
           $('#addl-courses').is(':visible')){
           $('#addl-courses').hide();
         }
@@ -3385,7 +3385,7 @@ function sGradesApplyHoverListener($form, selectors) {
       });
     }
   });
-  
+
   $('#lock-btn-selector:not(.sCourseMaterialsLock-processed)', context).addClass('sCourseMaterialsLock-processed').each(function () {
     var lockBtn = $(this);
     if(!lockBtn.hasClass('disable-lock-setup')){
@@ -3394,7 +3394,7 @@ function sGradesApplyHoverListener($form, selectors) {
       sCourseMaterialsSetupLock(lockBtn, thisForm, giDropBox, true);
     }
 	});
-  
+
 };
 
 function sCourseMaterialsSetupLock(lockButton, lockWrapper, giDropBox, setupEvent){
@@ -3958,7 +3958,7 @@ function sCommentEditCallback(data, options, element){
     commentBodyWrapper.replaceWith(commentObj.comment);
   }
   else{
-    commentBodyWrapper.html(commenktObj.comment);
+    commentBodyWrapper.html(commentObj.comment);
     commentTimeWrapper.replaceWith(commentEditedTs);
   }
   if(commentAttachmentWrapper.length > 0) {
@@ -7935,7 +7935,7 @@ $(function() {
             }
 
             $(document).data('s_content_saved_formula_image',null);
-            
+
             Popups.close();
 
             var imgElement = '<img src="' + data.content_path + '" formula="' + encodedFormula + '" class="mathquill-formula" />';
@@ -9275,14 +9275,14 @@ Drupal.behaviors.date_popup = function (context) {
             break;
 
           case 'timeEntry':
-            if(!datePopup.settings.defaultTime) 
+            if(!datePopup.settings.defaultTime)
               datePopup.settings.defaultTime = new Date(0,0,0,0,0);
-            
+
             $(this)
               .timeEntry(datePopup.settings)
               .addClass('date-popup-init')
               .focus();
-            
+
             $(this).bind('keydown',function(e){
               var code = (e.keyCode ? e.keyCode : e.which);
               // backspace deletes
@@ -9344,7 +9344,7 @@ Drupal.ahah = function(base, element_settings) {
   this.button = element_settings.button || { };
   this.immutable = element_settings.immutable;
   this.buildId = null;
-  
+
   if (this.effect == 'none') {
     this.showEffect = 'show';
     this.hideEffect = 'hide';
@@ -9525,7 +9525,7 @@ Drupal.ahah.prototype.success = function (response, status) {
   }
 
   Drupal.unfreezeHeight();
-  
+
   $(document).trigger('drupal_ahah_success_done',[response,status]);
 }
 
@@ -9603,7 +9603,7 @@ Drupal.ahah.prototype.complete = function (response, status) {
         return false;
       });
   });
-  
+
   $('.embed-cover:not(.sAttachment-processed)', context).addClass('sAttachment-processed').each(function(){
     $(this).click(function(){
       var cover = $(this),
@@ -9628,7 +9628,7 @@ Drupal.ahah.prototype.complete = function (response, status) {
       }
     });
   });
-  
+
   $('.attachments-link:not(.sAttachment-processed)', context).addClass('sAttachment-processed').each(function(){
       var link = $(this);
       var intPopup = $('.attachment-link-popup', link);
@@ -9641,10 +9641,10 @@ Drupal.ahah.prototype.complete = function (response, status) {
       });
       //hide the popup if the user goes from the tip arrow in
       intPopup.bind('mouseenter', function(){
-    	 $(this).hide(); 
+    	 $(this).hide();
       });
   });
-  
+
 }
 
 ;
@@ -9834,7 +9834,7 @@ function sEdgeSetupMoreLink(moreLink, moreLi, ulClass) {
  * From http://www.stjerneman.com/demo/maxlength-with-jquery
  */
 
-(function($) 
+(function($)
 {
 
   $.fn.maxlength = function(options)
@@ -9851,21 +9851,21 @@ function sEdgeSetupMoreLink(moreLink, moreLi, ulClass) {
       alertText:          "You have typed too many characters.", // Text in the alert message
       slider:             false // Use counter slider
     }, options );
-    
+
     // Add the default event
     $.merge(settings.events, ['keyup']);
 
-    return this.each(function() 
+    return this.each(function()
     {
       var item = $(this);
       var charactersLength = $(this).val().length;
-      
+
       // Update the status text
       function updateStatus()
       {
         var charactersLeft = settings.maxCharacters - charactersLength;
-        
-        if(charactersLeft < 0) 
+
+        if(charactersLeft < 0)
         {
           charactersLeft = 0;
         }
@@ -9873,12 +9873,12 @@ function sEdgeSetupMoreLink(moreLink, moreLi, ulClass) {
         item.next("div").html(charactersLeft + " " + settings.statusText);
       }
 
-      function checkChars() 
+      function checkChars()
       {
         var valid = true;
-        
+
         // Too many chars?
-        if(charactersLength >= settings.maxCharacters) 
+        if(charactersLength >= settings.maxCharacters)
         {
           // Too may chars, set the valid boolean to false
           valid = false;
@@ -9888,11 +9888,11 @@ function sEdgeSetupMoreLink(moreLink, moreLi, ulClass) {
           item.val(item.val().substr(0,settings.maxCharacters));
           // Show the alert dialog box, if its set to true
           showAlert();
-        } 
-        else 
+        }
+        else
         {
           // Remove the notification class
-          if(item.hasClass(settings.notificationClass)) 
+          if(item.hasClass(settings.notificationClass))
           {
             item.removeClass(settings.notificationClass);
           }
@@ -9903,9 +9903,9 @@ function sEdgeSetupMoreLink(moreLink, moreLi, ulClass) {
           updateStatus();
         }
       }
-            
+
       // Shows an alert msg
-      function showAlert() 
+      function showAlert()
       {
         if(settings.showAlert)
         {
@@ -9914,10 +9914,10 @@ function sEdgeSetupMoreLink(moreLink, moreLi, ulClass) {
       }
 
       // Check if the element is valid.
-      function validateElement() 
+      function validateElement()
       {
         var ret = false;
-        
+
         if(item.is('textarea')) {
           ret = true;
         } else if(item.filter("input[type=text]")) {
@@ -9930,11 +9930,11 @@ function sEdgeSetupMoreLink(moreLink, moreLi, ulClass) {
       }
 
       // Validate
-      if(!validateElement()) 
+      if(!validateElement())
       {
         return false;
       }
-      
+
       // Loop through the events and bind them to the element
       $.each(settings.events, function (i, n) {
         item.bind(n, function(e) {
@@ -9944,17 +9944,17 @@ function sEdgeSetupMoreLink(moreLink, moreLi, ulClass) {
       });
 
       // Insert the status div
-      if(settings.status) 
+      if(settings.status)
       {
         item.after($("<div/>").addClass(settings.statusClass).html('-'));
         updateStatus();
       }
 
       // Remove the status div
-      if(!settings.status) 
+      if(!settings.status)
       {
         var removeThisDiv = item.next("div."+settings.statusClass);
-        
+
         if(removeThisDiv) {
           removeThisDiv.remove();
         }
@@ -9964,14 +9964,14 @@ function sEdgeSetupMoreLink(moreLink, moreLi, ulClass) {
       // Slide counter
       if(settings.slider) {
         item.next().hide();
-        
+
         item.focus(function(){
           item.next().slideDown('fast');
         });
 
         item.blur(function(){
           item.next().slideUp('fast');
-        }); 
+        });
       }
 
     });
@@ -10254,11 +10254,11 @@ function sHomeSmartBoxRealmSelectionUpdateSelected(object, selected){
     $(".parent-post", formObj).hide();
     $('.no-share:not(.hidden)', formObj).addClass('hidden');
   }
-  
-  
-  object.trigger('sHomeSmartBoxRealmSelectionUpdate', [selected]);  
+
+
+  object.trigger('sHomeSmartBoxRealmSelectionUpdate', [selected]);
   sHomeSmartBoxRealmSelectionPopupDateBehaviors();
-  
+
 }
 
 function sHomeSmartBoxRealmSelectionPopupDateBehaviors(){
@@ -10271,13 +10271,13 @@ function sHomeSmartBoxRealmSelectionPopupDateBehaviors(){
         return;
     }
     var formWrapper = activePopupBody.find('#calendar-form-container');
-    formWrapper.find('.due-date').each(function() { 
+    formWrapper.find('.due-date').each(function() {
         sHomeSmartBoxSetStartDate(activePopupBody.attr('this-date'), $(this));
     });
     sPopupsResizeCenter();
 }
 
-function sHomeSmartBoxSetStartDate(dateStr, dateStartInput, allDay) { 
+function sHomeSmartBoxSetStartDate(dateStr, dateStartInput, allDay) {
     var date = new Date(dateStr);
     var day = date.getDate();
     if(day < 10){
@@ -10285,12 +10285,12 @@ function sHomeSmartBoxSetStartDate(dateStr, dateStartInput, allDay) {
     }
     var year = date.getFullYear().toString().substring(2);
     var dayStr = (date.getMonth()+1) + '/' + day + '/' + year;
-    
+
     // flip day/month for UK date-format
     if(Drupal.settings.s_common.date_format_language != undefined) {
       dayStr = Drupal.settings.s_common.date_format_language != 'en-GB' ? dayStr : day + '/' + (date.getMonth()+1)  + '/' + year
     }
-   
+
     var hour = date.getHours();
     var minutes = date.getMinutes();
     var meridiem = (hour > 11) ? 'PM' : 'AM';
@@ -10304,7 +10304,7 @@ function sHomeSmartBoxSetStartDate(dateStr, dateStartInput, allDay) {
     }
     hour = (hour < 10) ? '0' + hour.toString() : hour.toString();
     var timeStr = hour + ':' + minutes + meridiem;
-           
+
     if(dateStartInput.hasClass('due-date')) {
        dateStartInput.val(dayStr);
        var timeInputDDField = dateStartInput.parent().next().find('input');
