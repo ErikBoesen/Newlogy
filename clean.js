@@ -63,6 +63,13 @@ browser.storage.sync.get(['autoload', 'floating_header', 'custom_css', 'enter_po
 // Footer options link
 document.querySelector('footer nav').innerHTML = '// <a target="_blank" href="' + browser.extension.getURL('options/options.html') + '">Newlogy Options 🔧</a>';
 
+if (window.location.pathname == '/' || window.location.pathname == '/home') {
+    var brag = document.createElement('div');
+    brag.id = 'brag';
+    brag.textContent = 'I did get in. Thank you all for your support and for using a Chrome extension that some nerd cooked up in his spare time. I am honored to go to a school full of such wise and thoughtful individuals. :)\n\n- Erik';
+    document.getElementById('right-column').appendChild(brag);
+}
+
 // Add flag to language selector
 var flags = {'en': '🇺🇸', 'en-GB': '🇬🇧', 'fr-corp': '🇫🇷', 'ja': '🇯🇵', 'ms': '🇲🇾', 'pt': '🇵🇹', 'es': '🇪🇸'};
 var lang = document.querySelector('footer button');
