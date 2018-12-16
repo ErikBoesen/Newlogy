@@ -24,7 +24,8 @@ body, #main, #main-inner {
 #right-column h3 span,
 #right-column h4,
 .upcoming-time,
-._1wP6w._3ghFm {
+._1wP6w._3ghFm,
+#updates-count {
     color: #525D68 !important;
 }
 /* Sometimes when people copy and paste into the update composer the style will be odd. Correct for this. */
