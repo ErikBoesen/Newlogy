@@ -443,6 +443,10 @@ div[role="menu"] button {
 .like-btn::before {
     content: '👍 ';
 }
+.feed-comments.s-update-edge-hide-comments-form,
+.feed-comments.s-update-edge-hide-comments-form .s-comments-post-form {
+    display: block !important;
+}
 .feed-comments {
     background: none !important;
     padding: 0 !important;
