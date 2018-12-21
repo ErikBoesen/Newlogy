@@ -6,7 +6,7 @@ home_button.style = '';
 home_button.childNodes[0].className = '';
 
 // Simulate linking for full notification item
-var notification_selector = 'div._2awxe._3skcp._1tpub._26UWf._2nSV0'
+var notification_selector = '#header.new-site-navigation header nav ul div._2awxe._3skcp._1tpub._26UWf._2nSV0'
 onclick = function(e) {
     // Check if user clicked on notification item or anything inside of one
     if (e.target.matches(notification_selector + ',' + notification_selector + ' *')) {
