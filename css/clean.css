@@ -443,7 +443,7 @@ div[role="menu"] button {
 .like-btn::before {
     content: '👍 ';
 }
-.feed li .edge-footer .ajax-post-comment {
+.edge-footer .ajax-post-comment {
     display: none !important;
 }
 /* Show comment box by default on all eligible posts, not just those you've liked */
