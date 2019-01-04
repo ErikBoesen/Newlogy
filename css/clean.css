@@ -26,7 +26,7 @@ body, #main, #main-inner {
 .upcoming-time,
 ._1wP6w._3ghFm,
 #updates-count {
-    color: #525D68 !important;
+    color: #31373E !important;
 }
 /* Sometimes when people copy and paste into the update composer the style will be odd. Correct for this. */
 .update-body * {
