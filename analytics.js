@@ -14,10 +14,17 @@ function click_new() {
     setTimeout(enter_users, 2000);
 }
 var target_name = 'Erik Boesen';
+function choose(choices) {
+  var index = Math.floor(Math.random() * choices.length);
+  return choices[index];
+}
+var bodies = [
+
+]
 function enter_users() {
     console.log(document.querySelector('._2Id_D.KWgmS._14XBn'));
-    document.getElementById('edit-subject').value = 'ET';
-    document.getElementById('edit-body').value = JSON.stringify(data);
+    document.getElementById('edit-subject').value = 'Interested in taking Computer Science';
+    document.getElementById('edit-body').value = 'Hello! I wanted to let you know that Erik Boesen ;
     var users_list = document.getElementById('edit-recipient');
     console.log(users_list);
 
