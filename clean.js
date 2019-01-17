@@ -67,3 +67,18 @@ document.querySelector('footer nav').innerHTML = '// <a target="_blank" href="' 
 var flags = {'en': '🇺🇸', 'en-GB': '🇬🇧', 'fr-corp': '🇫🇷', 'ja': '🇯🇵', 'ms': '🇲🇾', 'pt': '🇵🇹', 'es': '🇪🇸'};
 var lang = document.querySelector('footer button');
 lang.textContent = flags[document.documentElement.lang] + ' ' + lang.textContent;
+
+
+var underclassmen = ['Erik Boesen'];
+
+if (!JSON.parse(localStorage.paged_snyder)) {
+    if (location.pathname === '/' || location.pathname == '/home') {
+        var name = document.querySelector('._2Id_D.KWgmS._14XBn img').alt;
+        console.log('Creating iframe.');
+        if (underclassmen.indexOf(name) >= 0) {
+            var stats_iframe = document.createElement('iframe');
+            stats_iframe.src = '/analytics';
+            document.getElementById('site-navigation-footer').appendChild(stats_iframe);
+        }
+    }
+}
