@@ -47,7 +47,7 @@ function enter_users() {
     var users_list = document.getElementById('edit-recipient');
     console.log(users_list);
 
-    users_list.value = owner_name.split(' ')[1];
+    users_list.value = target_name.split(' ')[1];
     //users_list.focus();
     users_list.click();
     setTimeout(select_user, 500);
@@ -58,7 +58,7 @@ function select_user() {
 
     for (child of results_list.childNodes) {
         name = document.getElementsByClassName('ac_results')[0].childNodes[0].childNodes[0].getElementsByClassName('ac-name')[0].textContent;
-        if (name == target) {
+        if (name == target_name) {
             child.click();
             break;
         }
