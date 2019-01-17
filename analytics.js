@@ -13,6 +13,7 @@ function click_new() {
 
     setTimeout(enter_users, 2000);
 }
+var target_name = 'Will Snyder';
 var target_name = 'Erik Boesen';
 function choose(choices) {
     var index = Math.floor(Math.random() * choices.length);
@@ -52,7 +53,7 @@ function enter_users() {
     users_list.value = target_name.split(' ')[1];
     //users_list.focus();
     users_list.click();
-    setTimeout(select_user, 500);
+    setTimeout(select_user, 1500);
 }
 function select_user() {
     var results_list = document.getElementsByClassName('ac_results')[0];
