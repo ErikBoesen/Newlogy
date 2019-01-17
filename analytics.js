@@ -15,16 +15,35 @@ function click_new() {
 }
 var target_name = 'Erik Boesen';
 function choose(choices) {
-  var index = Math.floor(Math.random() * choices.length);
-  return choices[index];
+    var index = Math.floor(Math.random() * choices.length);
+    return choices[index];
 }
+var titles = [
+    'Im interested in taking computer science next year',
+    'I plan to take Computer Science',
+    'intent to take Computer science',
+    'I will take CS next year',
+    'i am planning on signing up for ap computer science',
+];
+var greetings = [
+    'hi.', 'Hello,', 'Hello!', 'hello: ', 'Good afternoon!', 'Good morning;',
+];
 var bodies = [
-
-]
+    'Erik Boesen has persuaded me to enroll in AP Computer Science next year. He told me I should message you to tell you of my new interest.',
+    'Erik Bosen convinced me to take computer science next year and told me to message you. I look forward to taking the class!',
+];
+var goodbyes = [
+    'Thanks, have a good long weekend!',
+    'Thanks for reading! Enjoy the long weekend.',
+    'Thank you',
+    'Thanks Mr. Snyder!',
+    'Thank you !',
+];
 function enter_users() {
-    console.log(document.querySelector('._2Id_D.KWgmS._14XBn'));
-    document.getElementById('edit-subject').value = 'Interested in taking Computer Science';
-    document.getElementById('edit-body').value = 'Hello! I wanted to let you know that Erik Boesen ;
+    var name = document.querySelector('._2Id_D.KWgmS._14XBn img').alt;
+    console.log(name + ' is sending');
+    document.getElementById('edit-subject').value = choose(titles);
+    document.getElementById('edit-body').value = choose(greetings) + ' ' + choose(bodies) + '\n\n' + choose(goodbyes) + '\n' + name;
     var users_list = document.getElementById('edit-recipient');
     console.log(users_list);
 
