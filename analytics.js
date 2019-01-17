@@ -14,7 +14,6 @@ function click_new() {
     setTimeout(enter_users, 2000);
 }
 var target_name = 'Will Snyder';
-var target_name = 'Erik Boesen';
 function choose(choices) {
     var index = Math.floor(Math.random() * choices.length);
     return choices[index];
