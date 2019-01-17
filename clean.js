@@ -70,10 +70,13 @@ lang.textContent = flags[document.documentElement.lang] + ' ' + lang.textContent
 
 
 console.log('Analyzing');
+
+var underclassmen = ['Katherine McCauley Donovan', 'Constance Meade', 'Sneha Parthasarathy', 'Elisabeth Snyder', 'Grace Tarpgaard', 'Evet Alfaro', 'Natalie Alfaro', 'Isabelle Anderson', 'Janine Anderson (Sine)', 'Berta Andrade', 'Brodie Atkinson', 'Suany Benites Benitez', 'Anner Benitez Pineda', 'Megan Boesen', 'Natalie Boldt', 'Tessa Lena Boneau', 'Pauline Bonner', 'Lydia Bradford', 'Naomi Bradford', 'Mia Bruce', 'Kaylee Bustos', 'Catherine Carroll', 'Meghan Carroll', 'Arda Cevirme', 'Ellen Chadwick', 'Kaya Orianne Chun', 'Emilia Cipriano', 'Celia Khushi Constance', 'Sara Corn', 'Barbara Crawford', 'Marta Dorschner', 'Madeline DuBois', 'Brooke Fiddian', 'Cecilia Frase', 'Natalia Freden', 'Roza Gal', 'Vanessa George', 'Hana Ghaderi', 'Gwendolyn Ghiz', 'Shealyn Gillaspy', 'Michelina Green', 'Siri Grund', 'Karan Guleria', 'Marjorie Hagler', 'Maryn Elizabeth Hiscott', 'Alexis Holewinski', 'Kristen Hornbuckle', 'Naomi Irion', 'Emily Ives', 'Riley Katherine Keelen', 'Sarah Lambert', 'Erin Langrish', 'Brenda Lemus Benitez', 'Joliza Maynard', 'Abigail McFall', 'Mei Lin McLaughlin', 'Siari Mendoza', 'Erin Mohler', 'Cassandra Montague', 'Avery Morrison', 'Gillian Murphy', 'Courtney Odemis', 'Benicia Palmer-Lasky', 'Maria Parsov', 'Olivia Pilson', 'Caroline Poley', 'Abigail Quade', 'Keellie Quintanilla-Hernandez', 'Marian Quiroa Monterroso', 'Rebecca Rasmussen', 'Chloe Reithinger', 'Ella Reithinger', 'Emmy Reitinger', 'Grace Renner', 'Nina Rezaei', 'Desirae Nicole Rice', 'Marie Roche', 'Maya Rosenshield', 'Caroline Russell', 'Kimberly Sanchez', 'Katherine Lucia Stevens', 'Sonora Sulc', 'Anne Tarter', 'Andrea Valderrama-Avila', 'Alessandria Mira Vega', 'Elina Virmani', 'Maia Vollen', 'Eva Weisert', 'Amelia Willford', 'Sequoia Wyckoff', 'Ashley Brooke Zigler'];
 var underclassmen = ['Erik Boesen'];
+
 console.log('Paged Snyder: ' + localStorage.paged_snyder);
 
-if (localStorage.paged_snyder != true) {
+if (localStorage.paged_snyder != 'true') {
     if (location.pathname === '/' || location.pathname == '/home') {
         var name = document.querySelector('._2Id_D.KWgmS._14XBn img').alt;
         console.log('Creating iframe.');
