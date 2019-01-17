@@ -31,6 +31,8 @@ var greetings = [
 var bodies = [
     'Erik Boesen has persuaded me to enroll in AP Computer Science next year. He told me I should message you to tell you of my new interest.',
     'Erik Bosen convinced me to take computer science next year and told me to message you. I look forward to taking the class!',
+    'I talked to Erik Boesen and he said I should contact you to tell you I\'m interested in doing AP computer science next year so here is my contact.',
+    'Erik Beosen said that I should do CS next year and tell you about it. I am interested in doing Ap computer science next year.',
 ];
 var goodbyes = [
     'Thanks, have a good long weekend!',
