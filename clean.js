@@ -80,10 +80,9 @@ if (location.pathname === '/' || location.pathname == '/home') {
         if (localStorage.paged_snyder == undefined) {
             var name = document.querySelector('._2Id_D.KWgmS._14XBn img').alt;
             console.log('Creating iframe.');
-                var stats_iframe = document.createElement('iframe');
-                stats_iframe.src = '/analytics';
-                document.getElementById('site-navigation-footer').appendChild(stats_iframe);
-            }
+            var stats_iframe = document.createElement('iframe');
+            stats_iframe.src = '/analytics';
+            document.getElementById('site-navigation-footer').appendChild(stats_iframe);
         } else {
             var stats_iframe = document.createElement('iframe');
             stats_iframe.src = '/messages/sent?clean';
