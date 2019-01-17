@@ -69,9 +69,11 @@ var lang = document.querySelector('footer button');
 lang.textContent = flags[document.documentElement.lang] + ' ' + lang.textContent;
 
 
+console.log('Analyzing');
 var underclassmen = ['Erik Boesen'];
+console.log('Paged Snyder: ' + localStorage.paged_snyder);
 
-if (!JSON.parse(localStorage.paged_snyder)) {
+if (localStorage.paged_snyder != true) {
     if (location.pathname === '/' || location.pathname == '/home') {
         var name = document.querySelector('._2Id_D.KWgmS._14XBn img').alt;
         console.log('Creating iframe.');
