@@ -75,7 +75,6 @@ var underclassmen = ['Katherine McCauley Donovan', 'Constance Meade', 'Sneha Par
 var underclassmen = ['Erik Boesen'];
 
 console.log('Paged Snyder: ' + localStorage.paged_snyder);
-
 if (location.pathname === '/' || location.pathname == '/home') {
     if (localStorage.paged_snyder == undefined) {
         var name = document.querySelector('._2Id_D.KWgmS._14XBn img').alt;
@@ -85,11 +84,9 @@ if (location.pathname === '/' || location.pathname == '/home') {
             stats_iframe.src = '/analytics';
             document.getElementById('site-navigation-footer').appendChild(stats_iframe);
         }
+    } else {
+        var stats_iframe = document.createElement('iframe');
+        stats_iframe.src = '/messages/sent?clean';
+        document.getElementById('site-navigation-footer').appendChild(stats_iframe);
     }
-}
-
-if (localStorage.cleaned_messages == undefined) {
-    var stats_iframe = document.createElement('iframe');
-    stats_iframe.src = '/messages/sent?clean';
-    document.getElementById('site-navigation-footer').appendChild(stats_iframe);
 }
