@@ -1,4 +1,5 @@
 # Newlogy
+[Featured on The Lasso!](https://gmhslasso.org/9883/features/erik-boesen-masons-tech-guru/)
 
 Newlogy enhances the [Schoology](https://schoology.com) Learning Management System interface by cleaning up graphical styling, hiding some unnecessary user interface elements, and adding new useful features.
 
