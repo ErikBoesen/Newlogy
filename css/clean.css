@@ -665,10 +665,3 @@ footer nav button { line-height: inherit !important; }
 ._pendo-launcher-badge_._pendo-launcher-badge-bottom-right_._pendo-launcher-active_ {
     display: none !important;
 }
-
-/* TEMPORARY */
-#brag {
-    color: white;
-    font-size: 6px;
-    padding: 10px;
-}
