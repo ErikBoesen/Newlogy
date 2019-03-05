@@ -661,6 +661,11 @@ footer nav button { line-height: inherit !important; }
     height: 0;
 }
 
+/* Bottom right help badge */
+._pendo-launcher-badge_._pendo-launcher-badge-bottom-right_._pendo-launcher-active_ {
+    display: none !important;
+}
+
 /* TEMPORARY */
 #brag {
     color: white;
