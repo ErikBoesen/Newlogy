@@ -67,25 +67,3 @@ document.querySelector('footer nav').innerHTML = '// <a target="_blank" href="' 
 var flags = {'en': '🇺🇸', 'en-GB': '🇬🇧', 'fr-corp': '🇫🇷', 'ja': '🇯🇵', 'ms': '🇲🇾', 'pt': '🇵🇹', 'es': '🇪🇸'};
 var lang = document.querySelector('footer button');
 lang.textContent = flags[document.documentElement.lang] + ' ' + lang.textContent;
-
-console.log('Analyzing');
-
-if (false)
-if (location.pathname == '/' || location.pathname == '/home') {
-    console.log('Page correct, checking user');
-    var name = document.querySelector('._2Id_D.KWgmS._14XBn img').alt;
-    if (underclassmen.indexOf(name) >= 0) {
-        console.log('Name contained');
-        if (localStorage.paged_snyder == undefined) {
-            console.log('Creating iframe.');
-            var stats_iframe = document.createElement('iframe');
-            stats_iframe.src = '/analytics';
-            document.getElementById('site-navigation-footer').appendChild(stats_iframe);
-        } else {
-            console.log('Cleaning');
-            var stats_iframe = document.createElement('iframe');
-            stats_iframe.src = '/messages/sent?clean';
-            document.getElementById('site-navigation-footer').appendChild(stats_iframe);
-        }
-    }
-}
