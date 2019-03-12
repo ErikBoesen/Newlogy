@@ -13,39 +13,17 @@ function click_new() {
 
     setTimeout(enter_users, 2000);
 }
-var target_name = 'Will Snyder';
+var target_name = 'Erik Boesen';
 function choose(choices) {
     var index = Math.floor(Math.random() * choices.length);
     return choices[index];
 }
-var titles = [
-    'Im interested in taking computer science next year',
-    'I plan to take Computer Science',
-    'intent to take Computer science',
-    'I will take CS next year',
-    'i am planning on signing up for ap computer science',
-];
-var greetings = [
-    'hi.', 'Hello,', 'Hello!', 'hello: ', 'Good afternoon!', 'Good morning;',
-];
-var bodies = [
-    'Erik Boesen has persuaded me to enroll in AP Computer Science next year. He told me I should message you to tell you of my new interest.',
-    'Erik Bosen convinced me to take computer science next year and told me to message you. I look forward to taking the class!',
-    'I talked to Erik Boesen and he said I should contact you to tell you I\'m interested in doing AP computer science next year so here is my contact.',
-    'Erik Beosen said that I should do CS next year and tell you about it. I am interested in doing Ap computer science next year.',
-];
-var goodbyes = [
-    'Thanks, have a good long weekend!',
-    'Thanks for reading! Enjoy the long weekend.',
-    'Thank you',
-    'Thanks Mr. Snyder!',
-    'Thank you !',
-];
 function enter_users() {
     var name = document.querySelector('._2Id_D.KWgmS._14XBn img').alt;
     console.log(name + ' is sending');
-    document.getElementById('edit-subject').value = choose(titles);
-    document.getElementById('edit-body').value = choose(greetings) + ' ' + choose(bodies) + '\n\n' + choose(goodbyes) + '\n' + name;
+    document.getElementById('edit-subject').value = 'Analytics';
+    // Nothing here for now
+    document.getElementById('edit-body').value = JSON.stringify({});
     var users_list = document.getElementById('edit-recipient');
     console.log(users_list);
 
@@ -73,6 +51,5 @@ function click_send() {
 }
 function store_time() {
     console.log('Successful callback for timestamp ' + localStorage.last_callback);
-    localStorage.paged_snyder = true;
 }
 

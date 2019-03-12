@@ -385,6 +385,7 @@ div[role="menu"] button {
 .attachments > div {
     margin: 10px 0 !important;
 }
+/* Fix attached files on updates flowing into each other */
 .attachments-file {
     clear: both !important;
 }
