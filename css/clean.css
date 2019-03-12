@@ -385,6 +385,9 @@ div[role="menu"] button {
 .attachments > div {
     margin: 10px 0 !important;
 }
+.attachments-file {
+    clear: both !important;
+}
 .s-polls-poll-option {
     border-color: #eee !important;
 }
