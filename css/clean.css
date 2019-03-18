@@ -666,6 +666,6 @@ footer nav button { line-height: inherit !important; }
 }
 
 /* Bottom right help badge */
-._pendo-launcher-badge_._pendo-launcher-badge-bottom-right_._pendo-launcher-active_ {
+._pendo-launcher-badge_._pendo-launcher-badge-bottom-right_ {
     display: none !important;
 }
