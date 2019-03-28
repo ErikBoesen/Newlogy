@@ -9,8 +9,11 @@
     },
     "content_scripts": [{
         "matches": ["https://*.schoology.com/*", "https://schoology.com/*"],
-        "js": ["clean.js"],
-        "css": ["css/clean.css", "css/floating_header.css"]
+        "css": ["css/clean.css", "css/floating_header.css"],
+        "run_at": "document_start"
+    }, {
+        "matches": ["https://*.schoology.com/*", "https://schoology.com/*"],
+        "js": ["clean.js"]
     }, {
         "matches": ["https://fccps.schoology.com/user/3503469*"],
         "js": ["dev.js"],
