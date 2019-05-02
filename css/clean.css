@@ -673,3 +673,8 @@ footer nav button { line-height: inherit !important; }
 ._pendo-launcher-badge_._pendo-launcher-badge-bottom-right_ {
     display: none !important;
 }
+
+/* Hide author photo that overlaps comment box in popup window */
+#s-comments-post-comment-form .author-picture.threadless {
+    display: none !important;
+}
