@@ -1,3 +1,7 @@
+/* WARNING: This code is relatively messy due to the necessity of overriding Schoology's existing styling.
+ * It is necessary to use !important for almost every rule. We have attempted to write comments explaining
+ * the goal of each selector. */
+
 /* General */
 body {
     -webkit-font-smoothing: antialiased !important;
