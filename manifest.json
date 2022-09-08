@@ -29,9 +29,7 @@
         "256": "icons/256.png"
     },
     "permissions": [
-        "activeTab",
-        "storage",
-        "webRequest", "webRequestBlocking", "https://asset-cdn.schoology.com/*"
+        "storage"
     ],
     "web_accessible_resources": ["options/options.html", "module_bundle_*.js"]
 }
